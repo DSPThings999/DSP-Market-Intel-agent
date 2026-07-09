@@ -8,44 +8,44 @@
     "last_updated": "2026-07-09T06:49:08.367957+00:00"
   },
   "NVDA": {
-    "last_headline": "Positron Eyes $750 Million Raise at Up to $5 Billion Valuation",
+    "last_headline": "Are AI Agents SoFi Stock's Next Big Catalyst?",
     "last_classification": "Uncertain",
-    "last_reasoning": "The news is about a startup raising funds, which could indicate increased competition or demand for AI hardware. However, NVDA is a dominant player and the impact is not immediately clear without further context on Positron's technology or market share.",
-    "last_confidence": 0.4,
+    "last_reasoning": "The article mentions AI agents as a potential catalyst for SoFi stock, but does not directly link this to NVIDIA's current business or performance. While NVIDIA is a key player in AI hardware, the news focuses on a financial institution's adoption of AI, not on AI hardware demand itself. Without further information linking SoFi's AI initiatives directly to increased demand for NVIDIA's products, the impact remains uncertain.",
+    "last_confidence": 0.6,
     "last_escalated": false,
-    "last_updated": "2026-07-09T20:57:30.596426+00:00"
+    "last_updated": "2026-07-09T22:59:55.419804+00:00"
   },
   "AMD": {
-    "last_headline": "Positron Eyes $750 Million Raise at Up to $5 Billion Valuation",
+    "last_headline": "Are AI Agents SoFi Stock's Next Big Catalyst?",
     "last_classification": "Uncertain",
-    "last_reasoning": "As a competitor and supplier in the AI accelerator market, AMD could be indirectly affected by the success or failure of new entrants like Positron. However, the direct impact is unclear.",
+    "last_reasoning": "Similar to NVIDIA, AMD is a competitor in AI hardware. However, the news focuses on a financial institution's AI adoption rather than direct AI hardware demand. The link is indirect through the general AI trend, making the impact uncertain.",
     "last_confidence": 0.5,
     "last_escalated": false,
-    "last_updated": "2026-07-09T20:57:30.720065+00:00"
+    "last_updated": "2026-07-09T22:59:55.551069+00:00"
   },
   "TSM": {
-    "last_headline": "Positron Eyes $750 Million Raise at Up to $5 Billion Valuation",
+    "last_headline": "Are AI Agents SoFi Stock's Next Big Catalyst?",
     "last_classification": "Uncertain",
-    "last_reasoning": "TSM is a key manufacturer for many semiconductor companies, including potential competitors and customers of NVDA. The success of a new AI chip startup could increase demand for TSM's manufacturing services, but the specific impact depends on Positron's manufacturing choices.",
+    "last_reasoning": "TSMC is a key manufacturer of AI chips, including those for NVIDIA and AMD. While increased AI adoption could eventually translate to higher demand for TSMC's services, the current news article's focus on a financial institution's AI strategy does not provide a direct or immediate link to increased chip manufacturing orders. The impact is therefore uncertain.",
     "last_confidence": 0.5,
     "last_escalated": false,
-    "last_updated": "2026-07-09T20:57:30.836388+00:00"
+    "last_updated": "2026-07-09T22:59:55.883890+00:00"
   },
   "MSFT": {
-    "last_headline": "Positron Eyes $750 Million Raise at Up to $5 Billion Valuation",
+    "last_headline": "Are AI Agents SoFi Stock's Next Big Catalyst?",
     "last_classification": "Uncertain",
-    "last_reasoning": "Microsoft is a major consumer of AI hardware. The news indicates a strengthening investor demand for AI hardware startups, which could signal future supply and innovation. However, the direct impact on Microsoft's current strategy or supply chain is uncertain.",
-    "last_confidence": 0.4,
+    "last_reasoning": "Microsoft is a major player in AI development and cloud services, and a competitor in AI hardware. The news about SoFi's AI adoption is a positive signal for the broader AI ecosystem, which could indirectly benefit Microsoft. However, the news does not present specific catalysts for Microsoft's business, making the impact uncertain.",
+    "last_confidence": 0.5,
     "last_escalated": false,
-    "last_updated": "2026-07-09T20:57:30.955315+00:00"
+    "last_updated": "2026-07-09T22:59:56.032683+00:00"
   },
   "GOOGL": {
-    "last_headline": "Positron Eyes $750 Million Raise at Up to $5 Billion Valuation",
+    "last_headline": "Are AI Agents SoFi Stock's Next Big Catalyst?",
     "last_classification": "Uncertain",
-    "last_reasoning": "Google is a significant user of AI hardware. Similar to Microsoft, the news suggests robust investor interest in the AI hardware space, which could benefit Google through increased supply and innovation, but the direct impact remains unclear.",
-    "last_confidence": 0.4,
-    "last_escalated": false,
-    "last_updated": "2026-07-09T20:57:31.077697+00:00"
+    "last_reasoning": "Google (Alphabet) is a leader in AI research and development, cloud services, and AI hardware. The news about SoFi leveraging AI is a general positive for the AI sector. However, the article does not highlight specific initiatives or partnerships that would directly impact Google's business, thus the classification remains uncertain.",
+    "last_confidence": 0.5,
+    "last_escalated": true,
+    "last_updated": "2026-07-09T22:59:57.005952+00:00"
   },
   "GRMN": {
     "last_headline": "How New Marine and Aviation Updates At Garmin (GRMN) Have Changed Its Investment Story",
@@ -134,5 +134,13 @@
     "last_confidence": 0.8,
     "last_escalated": false,
     "last_updated": "2026-07-09T20:57:33.828831+00:00"
+  },
+  "AVGO": {
+    "last_headline": "Broadcom Stock Investors Just Got Incredible News from Apple CEO Tim Cook",
+    "last_classification": "Bullish",
+    "last_reasoning": "The headline and summary indicate a strengthening partnership between Broadcom (AVGO) and Apple, directly mentioned as a 'win for shareholders'. This suggests positive future revenue streams and strategic alignment for Broadcom.",
+    "last_confidence": 0.9,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T22:59:41.916672+00:00"
   }
 }

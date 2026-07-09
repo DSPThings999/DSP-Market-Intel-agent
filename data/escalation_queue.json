@@ -97,5 +97,23 @@
     "confidence": 0.4,
     "priority": "watch",
     "escalation_reason": "The confidence is low (0.4) and the priority is \"watch\", which is a combination that requires escalation. The reasoning is also somewhat vague, stating that it *might* benefit Google but providing no concrete link. The news itself does not mention GOOGL at all."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "Dow Jones Futures: Micron, Sandisk Jump As Nasdaq Tops Key Level; Delta, Taiwan Semi, SK Hynix Due",
+    "url": "https://finnhub.io/api/news?id=767e61f5555b96ab1e3a5ec38f5be7b82be89aa70feba30bd1f201eef2c9a1bb",
+    "classification": "Bullish",
+    "confidence": 0.6,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided for GOOGL is generic and does not directly connect the news headline (which focuses on Micron, Sandisk, Delta, Taiwan Semi, and SK Hynix) to GOOGL's specific performance. The headline mentions Micron and Sandisk soaring, and that Delta, Taiwan Semi, and SK Hynix are upcoming, but does not provide direct news for GOOGL. The reasoning makes a leap by stating \"positive market indicators for semiconductors\" and that this is \"likely to translate\" to GOOGL, without concrete evidence from the provided news or price/volume context for GOOGL specifically."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "Are AI Agents SoFi Stock's Next Big Catalyst?",
+    "url": "https://finnhub.io/api/news?id=ac2228cadf9e8b459d4caf0a7e4babe106dc0eea1bf79b095ddb9d3762358b03",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The verdict is for GOOGL, but the reasoning is about SoFi. The news doesn't mention GOOGL. The reasoning also doesn't connect to the price/volume context."
   }
 ]
