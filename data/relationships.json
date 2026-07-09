@@ -1,0 +1,22 @@
+{
+  "TSM": {
+    "type": "supplier",
+    "related": ["NVDA", "AAPL", "AMD", "QCOM"],
+    "note": "TSMC is the primary foundry for these fabless chip designers"
+  },
+  "NVDA": {
+    "type": "competitor_and_supplier",
+    "related": ["AMD", "TSM", "MSFT", "GOOGL"],
+    "note": "GPU/AI accelerator competitors and major cloud customers"
+  },
+  "AAPL": {
+    "type": "supply_chain",
+    "related": ["TSM", "QCOM", "SWKS"],
+    "note": "Key chip suppliers for Apple products"
+  },
+  "NVO": {
+    "type": "competitor",
+    "related": ["LLY"],
+    "note": "GLP-1 drug market competitors"
+  }
+}

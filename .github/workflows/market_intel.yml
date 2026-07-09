@@ -1,0 +1,43 @@
+name: Market Intelligence Agent
+
+on:
+  schedule:
+    # Every 15 min, 13:00-21:00 UTC, Mon-Fri.
+    # Covers US market hours (9:30am-4pm ET) across both EDT/EST with buffer.
+    - cron: "*/15 13-21 * * 1-5"
+  workflow_dispatch: {}  # allows manual "Run workflow" trigger for testing
+
+permissions:
+  contents: write  # needed to commit updated state/dedup files back to the repo
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run one pipeline cycle
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          CLASSIFIER_PROVIDER: gemini
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # GROK_API_KEY: ${{ secrets.GROK_API_KEY }}              # uncomment if switching CLASSIFIER_PROVIDER to grok
+          # ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}    # uncomment if switching CLASSIFIER_PROVIDER to claude
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python pipeline.py
+
+      - name: Commit updated state files
+        run: |
+          git config user.name "market-intel-bot"
+          git config user.email "actions@github.com"
+          git add data/state.json data/seen_news.json data/escalation_queue.json
+          git diff --cached --quiet || git commit -m "Update agent state [skip ci]"
+          git push
