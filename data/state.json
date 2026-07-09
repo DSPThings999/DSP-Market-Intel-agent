@@ -8,44 +8,44 @@
     "last_updated": "2026-07-09T06:49:08.367957+00:00"
   },
   "NVDA": {
-    "last_headline": "NVDA Stock Ready For A Comeback? Why This Analyst Now Calls Nvidia An \u2018Enhanced Buy\u2019",
-    "last_classification": "Bullish",
-    "last_reasoning": "Analyst upgrade to 'Enhanced Buy' and speculation of resuming China sales, combined with positive tech rotation, are driving shares higher. The price trend is already up.",
-    "last_confidence": 0.85,
+    "last_headline": "Positron Eyes $750 Million Raise at Up to $5 Billion Valuation",
+    "last_classification": "Uncertain",
+    "last_reasoning": "The news is about a startup raising funds, which could indicate increased competition or demand for AI hardware. However, NVDA is a dominant player and the impact is not immediately clear without further context on Positron's technology or market share.",
+    "last_confidence": 0.4,
     "last_escalated": false,
-    "last_updated": "2026-07-09T06:49:21.608272+00:00"
+    "last_updated": "2026-07-09T20:57:30.596426+00:00"
   },
   "AMD": {
-    "last_headline": "NVDA Stock Ready For A Comeback? Why This Analyst Now Calls Nvidia An \u2018Enhanced Buy\u2019",
-    "last_classification": "Bullish",
-    "last_reasoning": "As a competitor and major customer of NVDA's semiconductor manufacturing (TSM), positive news for NVDA regarding AI accelerators and potential sales recovery in China suggests broader strength in the AI chip market which AMD also participates in.",
-    "last_confidence": 0.65,
+    "last_headline": "Positron Eyes $750 Million Raise at Up to $5 Billion Valuation",
+    "last_classification": "Uncertain",
+    "last_reasoning": "As a competitor and supplier in the AI accelerator market, AMD could be indirectly affected by the success or failure of new entrants like Positron. However, the direct impact is unclear.",
+    "last_confidence": 0.5,
     "last_escalated": false,
-    "last_updated": "2026-07-09T06:49:22.141691+00:00"
+    "last_updated": "2026-07-09T20:57:30.720065+00:00"
   },
   "TSM": {
-    "last_headline": "Apple Sales Seen Weathering Hardware Price Increases",
-    "last_classification": "Bullish",
-    "last_reasoning": "As a key supplier to Apple, TSM is likely to benefit from sustained or increased Apple sales, implying continued demand for TSM's semiconductor manufacturing services.",
-    "last_confidence": 0.7,
+    "last_headline": "Positron Eyes $750 Million Raise at Up to $5 Billion Valuation",
+    "last_classification": "Uncertain",
+    "last_reasoning": "TSM is a key manufacturer for many semiconductor companies, including potential competitors and customers of NVDA. The success of a new AI chip startup could increase demand for TSM's manufacturing services, but the specific impact depends on Positron's manufacturing choices.",
+    "last_confidence": 0.5,
     "last_escalated": false,
-    "last_updated": "2026-07-09T06:50:20.226667+00:00"
+    "last_updated": "2026-07-09T20:57:30.836388+00:00"
   },
   "MSFT": {
-    "last_headline": "NVDA Stock Ready For A Comeback? Why This Analyst Now Calls Nvidia An \u2018Enhanced Buy\u2019",
+    "last_headline": "Positron Eyes $750 Million Raise at Up to $5 Billion Valuation",
     "last_classification": "Uncertain",
-    "last_reasoning": "While MSFT is a competitor in cloud AI services and a customer of NVDA, the direct impact of NVDA's analyst upgrade and China sales speculation is unclear. MSFT's own AI initiatives could be a tailwind or headwind depending on its strategic positioning relative to NVDA.",
+    "last_reasoning": "Microsoft is a major consumer of AI hardware. The news indicates a strengthening investor demand for AI hardware startups, which could signal future supply and innovation. However, the direct impact on Microsoft's current strategy or supply chain is uncertain.",
     "last_confidence": 0.4,
     "last_escalated": false,
-    "last_updated": "2026-07-09T06:49:24.523774+00:00"
+    "last_updated": "2026-07-09T20:57:30.955315+00:00"
   },
   "GOOGL": {
-    "last_headline": "NVDA Stock Ready For A Comeback? Why This Analyst Now Calls Nvidia An \u2018Enhanced Buy\u2019",
+    "last_headline": "Positron Eyes $750 Million Raise at Up to $5 Billion Valuation",
     "last_classification": "Uncertain",
-    "last_reasoning": "Similar to MSFT, GOOGL is a competitor in AI services and a potential customer of NVDA. The news is not directly related to GOOGL's core search or cloud business performance, making the impact uncertain.",
+    "last_reasoning": "Google is a significant user of AI hardware. Similar to Microsoft, the news suggests robust investor interest in the AI hardware space, which could benefit Google through increased supply and innovation, but the direct impact remains unclear.",
     "last_confidence": 0.4,
     "last_escalated": false,
-    "last_updated": "2026-07-09T06:49:24.629699+00:00"
+    "last_updated": "2026-07-09T20:57:31.077697+00:00"
   },
   "GRMN": {
     "last_headline": "How New Marine and Aviation Updates At Garmin (GRMN) Have Changed Its Investment Story",
@@ -78,5 +78,61 @@
     "last_confidence": 0.65,
     "last_escalated": false,
     "last_updated": "2026-07-09T06:50:20.416465+00:00"
+  },
+  "XLE": {
+    "last_headline": "Veteran Energy Analyst: \u201cCrude Oil Is Not the Problem.\u201d Here\u2019s What\u2019s Keeping Gas Prices High.",
+    "last_classification": "Uncertain",
+    "last_reasoning": "The news focuses on refining capacity as the bottleneck for gasoline prices, rather than crude oil supply. This could be bearish for refiners but potentially neutral or slightly bullish for E&P companies if crude oil prices are expected to stabilize or decline due to refining constraints. The overall impact on the broad energy sector ETF (XLE) is uncertain without further analysis of the specific components and their sensitivities.",
+    "last_confidence": 0.6,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T20:57:11.890636+00:00"
+  },
+  "VLO": {
+    "last_headline": "Veteran Energy Analyst: \u201cCrude Oil Is Not the Problem.\u201d Here\u2019s What\u2019s Keeping Gas Prices High.",
+    "last_classification": "Bearish",
+    "last_reasoning": "Valero Energy is a major independent petroleum refiner. The news highlights refining capacity as the key issue keeping gas prices high, implying that refiners are the bottleneck. This could indicate tight margins or operational challenges for refiners like VLO.",
+    "last_confidence": 0.7,
+    "last_escalated": true,
+    "last_updated": "2026-07-09T20:57:12.954049+00:00"
+  },
+  "MPC": {
+    "last_headline": "Veteran Energy Analyst: \u201cCrude Oil Is Not the Problem.\u201d Here\u2019s What\u2019s Keeping Gas Prices High.",
+    "last_classification": "Bearish",
+    "last_reasoning": "Marathon Petroleum Corporation is another major petroleum refiner. Similar to VLO, the news identifying refining capacity as the bottleneck suggests potential challenges or tight margins for MPC's core refining business.",
+    "last_confidence": 0.7,
+    "last_escalated": true,
+    "last_updated": "2026-07-09T20:57:14.168083+00:00"
+  },
+  "PSX": {
+    "last_headline": "Veteran Energy Analyst: \u201cCrude Oil Is Not the Problem.\u201d Here\u2019s What\u2019s Keeping Gas Prices High.",
+    "last_classification": "Bearish",
+    "last_reasoning": "Phillips 66 is a significant player in petroleum refining and midstream operations. The emphasis on refining capacity as a bottleneck suggests potential pressure on margins or operational focus for companies like PSX in their refining segment.",
+    "last_confidence": 0.7,
+    "last_escalated": true,
+    "last_updated": "2026-07-09T20:57:15.389451+00:00"
+  },
+  "XOM": {
+    "last_headline": "Veteran Energy Analyst: \u201cCrude Oil Is Not the Problem.\u201d Here\u2019s What\u2019s Keeping Gas Prices High.",
+    "last_classification": "Neutral",
+    "last_reasoning": "ExxonMobil is an integrated oil and gas company with significant refining operations. While the news highlights refining as a bottleneck, XOM's integrated model (upstream, downstream, chemicals) may mitigate the direct impact compared to pure-play refiners. The effect on their refining segment could be mixed, depending on their specific capacity and market position.",
+    "last_confidence": 0.5,
+    "last_escalated": true,
+    "last_updated": "2026-07-09T20:57:16.192607+00:00"
+  },
+  "CVX": {
+    "last_headline": "Veteran Energy Analyst: \u201cCrude Oil Is Not the Problem.\u201d Here\u2019s What\u2019s Keeping Gas Prices High.",
+    "last_classification": "Neutral",
+    "last_reasoning": "Chevron, like ExxonMobil, is an integrated energy company. The news focusing on refining capacity as the primary constraint for gas prices may have a mixed impact on CVX. Their refining segment could face pressure, but their upstream business might be less affected or even benefit from stable crude prices.",
+    "last_confidence": 0.5,
+    "last_escalated": true,
+    "last_updated": "2026-07-09T20:57:17.392185+00:00"
+  },
+  "CRM": {
+    "last_headline": "Jim Cramer: \u201cCheap Can Still Get Cheaper.\u201d Why He\u2019s Still Avoiding Salesforce",
+    "last_classification": "Bearish",
+    "last_reasoning": "The headline and summary directly reference Jim Cramer's negative outlook on Salesforce (CRM), citing its significant year-to-date and past-year stock price declines and his view that 'cheap can still get cheaper' due to concerns about its growth engine. This commentary from a prominent market commentator suggests continued downward pressure or a lack of immediate buying interest.",
+    "last_confidence": 0.8,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T20:57:33.828831+00:00"
   }
 }
