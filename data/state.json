@@ -1,0 +1,82 @@
+{
+  "MU": {
+    "last_headline": "Micron Raised Its Guidance on Surging Memory Prices. Here's What It Means for the Stock.",
+    "last_classification": "Bullish",
+    "last_reasoning": "Micron directly benefited from surging memory prices and raised its guidance, indicating strong demand and a positive pricing environment. This news is directly positive for Micron.",
+    "last_confidence": 0.95,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T06:49:08.367957+00:00"
+  },
+  "NVDA": {
+    "last_headline": "NVDA Stock Ready For A Comeback? Why This Analyst Now Calls Nvidia An \u2018Enhanced Buy\u2019",
+    "last_classification": "Bullish",
+    "last_reasoning": "Analyst upgrade to 'Enhanced Buy' and speculation of resuming China sales, combined with positive tech rotation, are driving shares higher. The price trend is already up.",
+    "last_confidence": 0.85,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T06:49:21.608272+00:00"
+  },
+  "AMD": {
+    "last_headline": "NVDA Stock Ready For A Comeback? Why This Analyst Now Calls Nvidia An \u2018Enhanced Buy\u2019",
+    "last_classification": "Bullish",
+    "last_reasoning": "As a competitor and major customer of NVDA's semiconductor manufacturing (TSM), positive news for NVDA regarding AI accelerators and potential sales recovery in China suggests broader strength in the AI chip market which AMD also participates in.",
+    "last_confidence": 0.65,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T06:49:22.141691+00:00"
+  },
+  "TSM": {
+    "last_headline": "Apple Sales Seen Weathering Hardware Price Increases",
+    "last_classification": "Bullish",
+    "last_reasoning": "As a key supplier to Apple, TSM is likely to benefit from sustained or increased Apple sales, implying continued demand for TSM's semiconductor manufacturing services.",
+    "last_confidence": 0.7,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T06:50:20.226667+00:00"
+  },
+  "MSFT": {
+    "last_headline": "NVDA Stock Ready For A Comeback? Why This Analyst Now Calls Nvidia An \u2018Enhanced Buy\u2019",
+    "last_classification": "Uncertain",
+    "last_reasoning": "While MSFT is a competitor in cloud AI services and a customer of NVDA, the direct impact of NVDA's analyst upgrade and China sales speculation is unclear. MSFT's own AI initiatives could be a tailwind or headwind depending on its strategic positioning relative to NVDA.",
+    "last_confidence": 0.4,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T06:49:24.523774+00:00"
+  },
+  "GOOGL": {
+    "last_headline": "NVDA Stock Ready For A Comeback? Why This Analyst Now Calls Nvidia An \u2018Enhanced Buy\u2019",
+    "last_classification": "Uncertain",
+    "last_reasoning": "Similar to MSFT, GOOGL is a competitor in AI services and a potential customer of NVDA. The news is not directly related to GOOGL's core search or cloud business performance, making the impact uncertain.",
+    "last_confidence": 0.4,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T06:49:24.629699+00:00"
+  },
+  "GRMN": {
+    "last_headline": "How New Marine and Aviation Updates At Garmin (GRMN) Have Changed Its Investment Story",
+    "last_classification": "Bullish",
+    "last_reasoning": "The news highlights significant product enhancements in Garmin's marine and aviation segments, which are described as 'highest-value specialty markets'. These updates, including improved sonar technology and expanded app features, suggest innovation and a deepening of their product ecosystem, likely to drive revenue and market share.",
+    "last_confidence": 0.85,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T06:50:01.290715+00:00"
+  },
+  "AAPL": {
+    "last_headline": "Apple Sales Seen Weathering Hardware Price Increases",
+    "last_classification": "Bullish",
+    "last_reasoning": "The news suggests Apple's demand is resilient to price increases, indicating strong sales and revenue potential despite market headwinds. This positive outlook aligns with the upward price trend.",
+    "last_confidence": 0.85,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T06:50:19.647433+00:00"
+  },
+  "QCOM": {
+    "last_headline": "Apple Sales Seen Weathering Hardware Price Increases",
+    "last_classification": "Bullish",
+    "last_reasoning": "QCOM, as a supplier to Apple, is expected to see continued demand for its components if Apple's sales remain robust, supporting QCOM's revenue.",
+    "last_confidence": 0.65,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T06:50:20.311856+00:00"
+  },
+  "SWKS": {
+    "last_headline": "Apple Sales Seen Weathering Hardware Price Increases",
+    "last_classification": "Bullish",
+    "last_reasoning": "SWKS, supplying components to Apple, should benefit from strong Apple sales, indicating sustained demand for SWKS's products.",
+    "last_confidence": 0.65,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T06:50:20.416465+00:00"
+  }
+}
