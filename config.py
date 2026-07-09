@@ -11,8 +11,13 @@ class Config:
     FINNHUB_API_KEY = os.getenv("FINNHUB_API_KEY", "")
 
     # --- AI classifier provider switch ---
-    # "grok" (active, free-credit tier while prototyping) or "claude" (commented out in classifier.py for now)
-    CLASSIFIER_PROVIDER = os.getenv("CLASSIFIER_PROVIDER", "grok")
+    # "gemini" (active — genuinely free forever, no card, no expiration),
+    # "grok" (kept, promo-credit based, not permanently free), or
+    # "claude" (commented out in classifier.py for now)
+    CLASSIFIER_PROVIDER = os.getenv("CLASSIFIER_PROVIDER", "gemini")
+
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+    GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite")
 
     GROK_API_KEY = os.getenv("GROK_API_KEY", "")
     GROK_MODEL = os.getenv("GROK_MODEL", "grok-4.3")

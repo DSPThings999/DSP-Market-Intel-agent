@@ -10,7 +10,7 @@ hosting) combo with a stack that costs nothing to run at watchlist-scale:
 | Price/volume     | Polygon.io               | yfinance (unofficial, no key)         | $0     |
 | Hosting/scheduler| Railway/Render always-on | GitHub Actions cron (`workflow_dispatch` + schedule) | $0 (public repo) |
 | State/dedup      | Redis + Supabase         | JSON files, committed back to repo by the Action | $0 |
-| Classification   | Claude Haiku (active)    | **Grok (active, xAI promo credits)** — Claude code kept, commented out in `classifier.py` | Grok: no permanent free tier (see below) |
+| Classification   | Claude Haiku (active)    | **Gemini Flash-Lite (active, free forever)** — Grok also wired up (promo credits only), Claude kept commented out | Gemini: genuinely $0, no card, no expiration |
 | Alerting         | Telegram Bot API         | Telegram Bot API                      | $0     |
 
 Supabase/Redis aren't gone forever — they're a clean upgrade path once git-committed
@@ -54,21 +54,24 @@ market-intel-agent/
     └── seen_news.json              # generated + committed by the Action (dedup log)
 ```
 
-## AI classifier: currently Grok, Claude ready to swap back in
+## AI classifier: Gemini active (free forever), Grok and Claude ready to swap in
 
-`classifier.py` supports both providers behind `CLASSIFIER_PROVIDER` in `.env`:
+`classifier.py` supports three providers behind `CLASSIFIER_PROVIDER` in `.env`:
 
-- **`grok` (active default)** — calls xAI's Grok via its OpenAI-compatible endpoint.
-  **Important:** Grok's API has no permanent free tier. New xAI accounts get
-  $25 in one-time promotional credits (expires in 30 days), or $150/month in
-  credits only if you opt into xAI using your API data for training. On a
-  15-min schedule this can burn through the promo credit faster than expected
-  — keep an eye on console.x.ai usage while prototyping.
-- **`claude`** — fully written in `classifier.py` but commented out. When
-  you're ready to switch: uncomment the `_classify_with_claude` function and
-  the `anthropic` import/client above it, set `CLASSIFIER_PROVIDER=claude` in
-  `.env` (and in the GitHub Actions workflow's `env:` block), and uncomment
-  the `ANTHROPIC_API_KEY` line there too.
+- **`gemini` (active default)** — Google AI Studio's Gemini API. Genuinely free
+  forever: no card, no expiration, unlike promo-credit-based free tiers. Uses
+  Gemini's native JSON-schema enforcement (`responseMimeType: application/json`),
+  so output is more reliably valid JSON than "please just return JSON" prompting.
+  Caveat: Google may use free-tier inputs/outputs to improve their products —
+  fine for public financial news, worth knowing regardless.
+- **`grok`** — fully wired up, kept as an option. xAI's free credits are
+  promotional ($25 one-time, or $150/month only with data-sharing opted in) —
+  not a permanent free tier like Gemini's.
+- **`claude`** — written but commented out in `classifier.py`. To switch:
+  uncomment the `_classify_with_claude` function and the `anthropic`
+  import/client above it, set `CLASSIFIER_PROVIDER=claude` in `.env` (and in
+  the GitHub Actions workflow's `env:` block), and uncomment the
+  `ANTHROPIC_API_KEY` line there too.
 
 ## The verification step (a small, real, agentic check)
 
@@ -92,9 +95,9 @@ tool-calling research loop yet — that's still Phase 5.
 1. Push this to a GitHub repo (public repo = unlimited free Actions minutes;
    private repo = 2,000 free minutes/month, still plenty at 15-min polling).
 2. In repo Settings → Secrets and variables → Actions, add:
-   `FINNHUB_API_KEY`, `GROK_API_KEY`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`
+   `FINNHUB_API_KEY`, `GEMINI_API_KEY`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`
    (same pattern as your existing stock-analysis repo's `EMAIL_*` secrets).
-   Add `ANTHROPIC_API_KEY` later when you switch back to Claude.
+   `GROK_API_KEY` and `ANTHROPIC_API_KEY` are only needed if you switch providers.
 3. Edit `data/watchlist.json` and `data/relationships.json` for your actual tickers
    and known relationships (competitors, suppliers, customers, ETFs).
 4. Trigger the workflow manually once via Actions → Market Intelligence Agent →
