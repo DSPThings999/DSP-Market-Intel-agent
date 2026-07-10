@@ -17,6 +17,7 @@ their models. Fine for public financial news headlines; worth knowing if you
 ever feed it anything sensitive.
 """
 import json
+import time
 import requests
 from config import Config
 
@@ -82,14 +83,31 @@ def _classify_with_gemini(system_prompt: str, user_payload: str, image_b64: str 
         "contents": [{"role": "user", "parts": parts}],
         "generationConfig": {"responseMimeType": "application/json"},
     }
-    try:
-        resp = requests.post(url, json=body, timeout=30)
-        resp.raise_for_status()
-        raw_text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
-        return _extract_json(raw_text)
-    except (requests.RequestException, KeyError, IndexError) as e:
-        print(f"[classifier] Gemini request failed: {e}")
-        return None
+
+    max_retries = 3
+    for attempt in range(1, max_retries + 1):
+        try:
+            resp = requests.post(url, json=body, timeout=60)
+            if resp.status_code == 429:
+                wait = 15 * attempt  # back off 15s, 30s, 45s
+                print(f"[classifier] Gemini rate-limited (429), attempt {attempt}/{max_retries} — waiting {wait}s")
+                time.sleep(wait)
+                continue
+            resp.raise_for_status()
+            raw_text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
+            return _extract_json(raw_text)
+        except requests.RequestException as e:
+            status = getattr(e.response, "status_code", "n/a")
+            body_snippet = getattr(e.response, "text", "")[:300] if getattr(e, "response", None) else ""
+            print(f"[classifier] Gemini request failed (attempt {attempt}/{max_retries}, status={status}): {e} | {body_snippet}")
+            if attempt < max_retries:
+                time.sleep(5 * attempt)
+        except (KeyError, IndexError) as e:
+            print(f"[classifier] Gemini response missing expected fields: {e}")
+            return None
+
+    print("[classifier] Gemini request failed after all retries.")
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -239,36 +257,12 @@ def generate_ticker_report(
     hourly_context: dict,
     chart_image_b64: str | None = None,
 ) -> dict | None:
-    """Returns a parsed JSON dict matching the daily report schema, or None on failure."""
+    """
+    Returns a parsed JSON dict matching the daily report schema, or None on
+    failure. Kept for on-demand/manual use; the standing digest sent every
+    cycle no longer calls this by default (see report_generator.py) — it
+    reuses data already produced by the main classification step instead,
+    to avoid a second full round of API calls per ticker every run.
+    """
     user_payload = _build_report_payload(ticker, state, price_context, hourly_context)
-
-    if Config.CLASSIFIER_PROVIDER == "gemini":
-        url = (
-            f"https://generativelanguage.googleapis.com/v1beta/models/"
-            f"{Config.GEMINI_MODEL}:generateContent?key={Config.GEMINI_API_KEY}"
-        )
-        parts = [{"text": user_payload}]
-        if chart_image_b64:
-            parts.append({
-                "inline_data": {
-                    "mime_type": "image/png",
-                    "data": chart_image_b64,
-                }
-            })
-        body = {
-            "system_instruction": {"parts": [{"text": DAILY_REPORT_PROMPT}]},
-            "contents": [{"role": "user", "parts": parts}],
-            "generationConfig": {"responseMimeType": "application/json"},
-        }
-        try:
-            resp = requests.post(url, json=body, timeout=30)
-            resp.raise_for_status()
-            raw_text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
-            return _extract_json(raw_text)
-        except (requests.RequestException, KeyError, IndexError) as e:
-            print(f"[classifier] Gemini report request failed: {e}")
-            return None
-    else:
-        # Chart image support is Gemini-only for now. Non-image providers
-        # still get a text-only report (chart_read will just be empty).
-        return _dispatch(DAILY_REPORT_PROMPT, user_payload)
+    return _dispatch(DAILY_REPORT_PROMPT, user_payload, chart_image_b64)

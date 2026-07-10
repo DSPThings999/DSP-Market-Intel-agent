@@ -90,6 +90,42 @@ tool-calling research loop yet — that's still Phase 5.
   news item), so double the per-item cost estimates from the cost breakdown
   above when budgeting.
 
+## Reliability: rate-limit retries + reduced call volume
+
+Earlier versions of the digest made a *second* full round of Gemini calls
+(one per ticker, with a chart image) purely for the standing report, on top
+of the classify/verify calls already happening for fresh news — this reliably
+triggered Gemini's free-tier rate limit partway through a run, causing later
+tickers to silently fail.
+
+Two fixes:
+- **`report_generator.py` no longer calls any AI model.** The digest is built
+  entirely from `data/state.json`, which the main classification step
+  (`pipeline.py` + `classifier.py`) already populates with everything needed
+  (headline, classification, confidence, current price, expected range, chart
+  read). This roughly halves API calls per cycle.
+- **`classifier.py`'s Gemini calls now retry with backoff** on rate-limit
+  (429) responses, and `pipeline.py` adds a short delay between watchlist
+  tickers, so even under load the pipeline degrades gracefully instead of
+  silently failing.
+
+## The digest, grouped by sector
+
+Each cycle's digest now groups your watchlist by sector (from
+`data/relationships.json`), highlights the single biggest/most important news
+item per sector, then lists every ticker in that sector with its current
+price, speculative range, chart read, and which related tickers (company,
+sector, or country level) might also be affected — instead of one flat,
+repetitive list.
+
+## Macro/general news scanning
+
+`ingestion/finnhub_client.py`'s `fetch_general_news()` (written earlier but
+unused) is now wired into `pipeline.py` — broad market/macro news (Fed
+moves, sector-wide events) gets classified against your whole watchlist at
+once, since it isn't tied to one specific ticker. This is in addition to,
+not instead of, the per-ticker company news scanning.
+
 ## Setup
 
 1. Push this to a GitHub repo (public repo = unlimited free Actions minutes;

@@ -16,8 +16,9 @@ Designed to run as a single GitHub Actions job (see .github/workflows/market_int
 rather than a long-running always-on service.
 """
 import json
+import time
 from config import Config
-from ingestion.finnhub_client import fetch_company_news, normalize_finnhub_item
+from ingestion.finnhub_client import fetch_company_news, fetch_general_news, normalize_finnhub_item
 from ingestion.yfinance_client import get_price_context
 from ingestion.chart_generator import generate_chart_image
 from ticker_mapper import resolve_tickers
@@ -74,6 +75,7 @@ def run_cycle():
 
         price_context = get_price_context(ticker)
         chart_image = generate_chart_image(ticker)
+        time.sleep(4)  # space out calls to stay under Gemini's free-tier rate limit
 
         for raw in raw_items:
             news_item = normalize_finnhub_item(raw, direct_ticker=ticker)
@@ -110,6 +112,10 @@ def run_cycle():
                     "last_classification": impact.get("classification"),
                     "last_reasoning": impact.get("reasoning"),
                     "last_confidence": impact.get("confidence"),
+                    "last_priority": impact.get("priority"),
+                    "last_current_price": impact.get("current_price"),
+                    "last_expected_price_range": impact.get("expected_price_range"),
+                    "last_chart_read": impact.get("chart_read"),
                     "last_escalated": bool(verification and verification.get("needs_escalation")),
                 })
 
@@ -124,6 +130,65 @@ def run_cycle():
                     watch_batch.append(alert_text)
                 else:
                     low_batch.append(alert_text)
+
+    # --- General/macro market news (Fed moves, broad market events, etc.) ---
+    # Checked against the WHOLE watchlist at once, since macro news doesn't
+    # have one "direct" ticker — the model decides which watchlist tickers
+    # it actually affects via the same impact schema as per-ticker news.
+    print("[pipeline] Fetching general/macro market news...")
+    general_items = fetch_general_news()
+    for raw in general_items:
+        news_item = normalize_finnhub_item(raw, direct_ticker=None)
+        news_item["direct_tickers"] = []  # macro news isn't tied to one ticker
+        news_id = news_item["id"]
+
+        if not news_id or store.has_seen(news_id):
+            continue
+
+        ticker_context = resolve_tickers(watchlist)  # treat whole watchlist as candidates
+        result = classify_news_item(news_item, ticker_context, price_context=None, chart_image_b64=None)
+        store.mark_seen(news_id)
+
+        if not result:
+            continue
+
+        processed += 1
+
+        for affected_ticker, impact in result.get("impact", {}).items():
+            if affected_ticker not in watchlist:
+                continue  # macro classification may mention tickers outside our watchlist; skip those
+
+            verification = verify_classification(news_item, ticker_context, {}, impact)
+
+            if verification and verification.get("needs_escalation"):
+                escalated += 1
+                reason = verification.get("escalation_reason", "")
+                _log_escalation(news_item, affected_ticker, impact, reason)
+                print(f"[pipeline] {affected_ticker}: flagged for escalation (macro news) — {reason}")
+
+            store.update_state(affected_ticker, {
+                "last_headline": news_item["headline"],
+                "last_classification": impact.get("classification"),
+                "last_reasoning": impact.get("reasoning"),
+                "last_confidence": impact.get("confidence"),
+                "last_priority": impact.get("priority"),
+                "last_current_price": impact.get("current_price"),
+                "last_expected_price_range": impact.get("expected_price_range"),
+                "last_chart_read": impact.get("chart_read"),
+                "last_escalated": bool(verification and verification.get("needs_escalation")),
+            })
+
+            priority = impact.get("priority", "low")
+            alert_text = format_alert(news_item, affected_ticker, impact)
+            if verification and verification.get("needs_escalation"):
+                alert_text = "⚠️ *Flagged for review — verdict may need deeper research*\n" + alert_text
+
+            if priority == "urgent":
+                send_telegram_message(alert_text)
+            elif priority == "watch":
+                watch_batch.append(alert_text)
+            else:
+                low_batch.append(alert_text)
 
     if watch_batch:
         send_telegram_message("🟡 *Watch batch:*\n\n" + "\n\n---\n\n".join(watch_batch))
