@@ -42,10 +42,10 @@ def _build_user_payload(news_item: dict, ticker_context: dict, price_context: di
             "(e.g. supplier/competitor) — treat these as high-confidence "
             "candidates for ripple-effect classification, not guesses. "
             "price_volume_context reflects the primary direct ticker only "
-            "(free-tier data via yfinance); leave chart/technical-indicator "
-            "fields empty as noted in the system prompt. market_cap may be "
-            "null if unavailable this cycle — treat that as missing data, "
-            "not as a signal itself."
+            "(free-tier data via yfinance) and includes current_price; leave "
+            "chart-related fields empty only if no chart image was attached. "
+            "market_cap may be null if unavailable this cycle — treat that as "
+            "missing data, not as a signal itself."
         ),
     }
     return json.dumps(payload, indent=2)
@@ -69,14 +69,17 @@ def _extract_json(raw_text: str) -> dict | None:
 # expiration. Uses native responseMimeType: "application/json" so Gemini
 # enforces valid JSON output rather than just being asked nicely for it.
 # ---------------------------------------------------------------------------
-def _classify_with_gemini(system_prompt: str, user_payload: str) -> dict | None:
+def _classify_with_gemini(system_prompt: str, user_payload: str, image_b64: str | None = None) -> dict | None:
     url = (
         f"https://generativelanguage.googleapis.com/v1beta/models/"
         f"{Config.GEMINI_MODEL}:generateContent?key={Config.GEMINI_API_KEY}"
     )
+    parts = [{"text": user_payload}]
+    if image_b64:
+        parts.append({"inline_data": {"mime_type": "image/png", "data": image_b64}})
     body = {
         "system_instruction": {"parts": [{"text": system_prompt}]},
-        "contents": [{"role": "user", "parts": [{"text": user_payload}]}],
+        "contents": [{"role": "user", "parts": parts}],
         "generationConfig": {"responseMimeType": "application/json"},
     }
     try:
@@ -141,11 +144,11 @@ def _classify_with_grok(system_prompt: str, user_payload: str) -> dict | None:
 #         return None
 
 
-def _dispatch(system_prompt: str, user_payload: str) -> dict | None:
+def _dispatch(system_prompt: str, user_payload: str, image_b64: str | None = None) -> dict | None:
     if Config.CLASSIFIER_PROVIDER == "gemini":
-        return _classify_with_gemini(system_prompt, user_payload)
+        return _classify_with_gemini(system_prompt, user_payload, image_b64)
     elif Config.CLASSIFIER_PROVIDER == "grok":
-        return _classify_with_grok(system_prompt, user_payload)
+        return _classify_with_grok(system_prompt, user_payload)  # image support not wired for Grok yet
     elif Config.CLASSIFIER_PROVIDER == "claude":
         raise NotImplementedError(
             "CLASSIFIER_PROVIDER is set to 'claude' but the Claude code path is "
@@ -156,10 +159,15 @@ def _dispatch(system_prompt: str, user_payload: str) -> dict | None:
         raise ValueError(f"Unknown CLASSIFIER_PROVIDER: {Config.CLASSIFIER_PROVIDER}")
 
 
-def classify_news_item(news_item: dict, ticker_context: dict, price_context: dict | None = None) -> dict | None:
+def classify_news_item(
+    news_item: dict,
+    ticker_context: dict,
+    price_context: dict | None = None,
+    chart_image_b64: str | None = None,
+) -> dict | None:
     """Returns a parsed JSON dict matching the agent's output schema, or None on failure."""
     user_payload = _build_user_payload(news_item, ticker_context, price_context)
-    return _dispatch(SYSTEM_PROMPT, user_payload)
+    return _dispatch(SYSTEM_PROMPT, user_payload, chart_image_b64)
 
 
 # ---------------------------------------------------------------------------
@@ -193,3 +201,74 @@ def verify_classification(news_item: dict, ticker_context: dict, price_context: 
     """
     user_payload = _build_verification_payload(news_item, ticker_context, price_context, verdict)
     return _dispatch(VERIFICATION_PROMPT, user_payload)
+
+
+# ---------------------------------------------------------------------------
+# PER-TICKER DIGEST REPORT: one-liner status, directional lean (NOT trading
+# advice), volume note, latest news, last-hour effect, chart read, and a
+# clearly-labeled speculative next-day outlook. Supports an optional chart
+# image (base64 PNG from ingestion/chart_generator.py) via Gemini's vision
+# input — only implemented for the Gemini path, since that's the active
+# default; Grok/Claude image support can be added the same way later if you
+# switch providers.
+# ---------------------------------------------------------------------------
+with open(Config.DAILY_REPORT_PROMPT_PATH, "r") as f:
+    DAILY_REPORT_PROMPT = f.read()
+
+
+def _build_report_payload(ticker: str, state: dict, price_context: dict, hourly_context: dict) -> str:
+    payload = {
+        "ticker": ticker,
+        "last_known_state": state or {},
+        "price_volume_context": price_context or {},
+        "last_hour_context": hourly_context or {},
+        "note": (
+            "last_known_state reflects the most recent classified news for "
+            "this ticker (may be several hours/days old if nothing new has "
+            "happened). Missing/null fields mean no data was available this "
+            "cycle — treat as missing, not as a signal."
+        ),
+    }
+    return json.dumps(payload, indent=2)
+
+
+def generate_ticker_report(
+    ticker: str,
+    state: dict,
+    price_context: dict,
+    hourly_context: dict,
+    chart_image_b64: str | None = None,
+) -> dict | None:
+    """Returns a parsed JSON dict matching the daily report schema, or None on failure."""
+    user_payload = _build_report_payload(ticker, state, price_context, hourly_context)
+
+    if Config.CLASSIFIER_PROVIDER == "gemini":
+        url = (
+            f"https://generativelanguage.googleapis.com/v1beta/models/"
+            f"{Config.GEMINI_MODEL}:generateContent?key={Config.GEMINI_API_KEY}"
+        )
+        parts = [{"text": user_payload}]
+        if chart_image_b64:
+            parts.append({
+                "inline_data": {
+                    "mime_type": "image/png",
+                    "data": chart_image_b64,
+                }
+            })
+        body = {
+            "system_instruction": {"parts": [{"text": DAILY_REPORT_PROMPT}]},
+            "contents": [{"role": "user", "parts": parts}],
+            "generationConfig": {"responseMimeType": "application/json"},
+        }
+        try:
+            resp = requests.post(url, json=body, timeout=30)
+            resp.raise_for_status()
+            raw_text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
+            return _extract_json(raw_text)
+        except (requests.RequestException, KeyError, IndexError) as e:
+            print(f"[classifier] Gemini report request failed: {e}")
+            return None
+    else:
+        # Chart image support is Gemini-only for now. Non-image providers
+        # still get a text-only report (chart_read will just be empty).
+        return _dispatch(DAILY_REPORT_PROMPT, user_payload)

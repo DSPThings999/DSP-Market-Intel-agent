@@ -41,6 +41,9 @@ class Config:
     VERIFICATION_PROMPT_PATH = os.path.join(
         os.path.dirname(__file__), "prompts", "verification_prompt.md"
     )
+    DAILY_REPORT_PROMPT_PATH = os.path.join(
+        os.path.dirname(__file__), "prompts", "daily_report_prompt.md"
+    )
     ESCALATION_QUEUE_PATH = os.path.join(
         os.path.dirname(__file__), "data", "escalation_queue.json"
     )

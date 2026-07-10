@@ -2,21 +2,43 @@
   "TSM": {
     "type": "supplier",
     "related": ["NVDA", "AAPL", "AMD", "QCOM"],
+    "sector": "semiconductors",
+    "country": "Taiwan",
     "note": "TSMC is the primary foundry for these fabless chip designers"
   },
   "NVDA": {
     "type": "competitor_and_supplier",
     "related": ["AMD", "TSM", "MSFT", "GOOGL"],
+    "sector": "semiconductors",
+    "country": "United States",
     "note": "GPU/AI accelerator competitors and major cloud customers"
   },
   "AAPL": {
     "type": "supply_chain",
     "related": ["TSM", "QCOM", "SWKS"],
+    "sector": "consumer_electronics",
+    "country": "United States",
     "note": "Key chip suppliers for Apple products"
+  },
+  "AMD": {
+    "type": "competitor",
+    "related": ["NVDA", "TSM", "INTC"],
+    "sector": "semiconductors",
+    "country": "United States",
+    "note": "Direct GPU/CPU competitor to Nvidia and Intel"
+  },
+  "MSFT": {
+    "type": "cloud_customer",
+    "related": ["NVDA", "AMD", "GOOGL", "AMZN"],
+    "sector": "cloud_computing",
+    "country": "United States",
+    "note": "Major cloud/AI infrastructure buyer and hyperscaler competitor"
   },
   "NVO": {
     "type": "competitor",
     "related": ["LLY"],
+    "sector": "pharmaceuticals",
+    "country": "Denmark",
     "note": "GLP-1 drug market competitors"
   }
 }

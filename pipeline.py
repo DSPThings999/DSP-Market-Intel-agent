@@ -19,10 +19,12 @@ import json
 from config import Config
 from ingestion.finnhub_client import fetch_company_news, normalize_finnhub_item
 from ingestion.yfinance_client import get_price_context
+from ingestion.chart_generator import generate_chart_image
 from ticker_mapper import resolve_tickers
 from classifier import classify_news_item, verify_classification
 from state_store import StateStore
 from alerting.telegram_bot import format_alert, send_telegram_message
+from report_generator import build_digest
 
 
 def load_watchlist() -> list[str]:
@@ -71,6 +73,7 @@ def run_cycle():
         print(f"[pipeline] {ticker}: fetched {len(raw_items)} raw news items.")
 
         price_context = get_price_context(ticker)
+        chart_image = generate_chart_image(ticker)
 
         for raw in raw_items:
             news_item = normalize_finnhub_item(raw, direct_ticker=ticker)
@@ -80,7 +83,7 @@ def run_cycle():
                 continue
 
             ticker_context = resolve_tickers(news_item["direct_tickers"])
-            result = classify_news_item(news_item, ticker_context, price_context)
+            result = classify_news_item(news_item, ticker_context, price_context, chart_image)
             store.mark_seen(news_id)
 
             if not result:
@@ -128,6 +131,11 @@ def run_cycle():
         print(f"[pipeline] {len(low_batch)} low-priority items queued for daily digest (not yet implemented).")
 
     print(f"[pipeline] Cycle complete. {processed} new items classified, {escalated} flagged for escalation.")
+
+    print("[pipeline] Building watchlist digest...")
+    digest = build_digest()
+    send_telegram_message(digest)
+    print("[pipeline] Digest sent.")
 
 
 if __name__ == "__main__":

@@ -6,6 +6,32 @@ Polygon would otherwise have provided, at zero cost.
 import yfinance as yf
 
 
+def get_hourly_change(ticker: str) -> dict:
+    """
+    Returns the approximate price change over the last available hour of
+    trading (intraday), used for the "what happened in the last hour" line
+    in per-ticker reports. Returns empty values outside market hours or if
+    intraday data isn't available (yfinance intraday data can be sparse).
+    """
+    try:
+        intraday = yf.Ticker(ticker).history(period="1d", interval="1h")
+    except Exception as e:
+        print(f"[yfinance_client] Error fetching hourly data for {ticker}: {e}")
+        return {"hourly_change_pct": None, "hourly_volume": None}
+
+    if intraday.empty or len(intraday) < 2:
+        return {"hourly_change_pct": None, "hourly_volume": None}
+
+    last_close = intraday["Close"].iloc[-1]
+    prev_close = intraday["Close"].iloc[-2]
+    change_pct = ((last_close - prev_close) / prev_close) * 100 if prev_close else None
+
+    return {
+        "hourly_change_pct": round(change_pct, 2) if change_pct is not None else None,
+        "hourly_volume": int(intraday["Volume"].iloc[-1]),
+    }
+
+
 def get_price_context(ticker: str) -> dict:
     """
     Returns a lightweight snapshot used as classification context:
@@ -58,9 +84,12 @@ def get_price_context(ticker: str) -> dict:
     except Exception as e:
         print(f"[yfinance_client] Error fetching market cap for {ticker} (non-fatal): {e}")
 
+    current_price = round(float(closes.iloc[-1]), 2)
+
     return {
         "price_trend": price_trend,
         "volume_trend": volume_trend,
         "volatility": volatility,
         "market_cap": market_cap,
+        "current_price": current_price,
     }

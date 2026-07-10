@@ -23,13 +23,36 @@ def format_alert(news_item: dict, ticker: str, impact: dict) -> str:
     priority_icon = PRIORITY_EMOJI.get(impact.get("priority", "low"), "⚪")
     impact_icon = IMPACT_EMOJI.get(impact.get("classification", "Uncertain"), "❓")
 
-    return (
-        f"{priority_icon} {impact_icon} *{ticker}* — {impact.get('classification', 'Uncertain')}\n"
-        f"_{news_item.get('headline', '')}_\n\n"
-        f"{impact.get('reasoning', '')}\n\n"
-        f"Source: {news_item.get('source', '')}\n"
-        f"Confidence: {impact.get('confidence', 0.0)}"
-    )
+    current_price = impact.get("current_price")
+    price_line = f"Current price: ${current_price}" if current_price is not None else "Current price: n/a"
+
+    expected_range = impact.get("expected_price_range", "")
+    expected_line = f"Speculative next-session range: {expected_range}" if expected_range else ""
+
+    chart_read = impact.get("chart_read", "")
+    chart_line = f"Chart read: {chart_read}" if chart_read else ""
+
+    lines = [
+        f"{priority_icon} {impact_icon} *{ticker}* — {impact.get('classification', 'Uncertain')}",
+        f"_{news_item.get('headline', '')}_",
+        "",
+        impact.get("reasoning", ""),
+        "",
+        price_line,
+    ]
+    if expected_line:
+        lines.append(expected_line)
+    if chart_line:
+        lines.append(chart_line)
+    lines += [
+        "",
+        f"Source: {news_item.get('source', '')}",
+        f"Confidence: {impact.get('confidence', 0.0)}",
+        "",
+        "_Not financial advice — an AI's read of current data, not a guaranteed prediction._",
+    ]
+
+    return "\n".join(lines)
 
 
 def send_telegram_message(text: str):
