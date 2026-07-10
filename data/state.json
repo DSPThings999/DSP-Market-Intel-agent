@@ -1,0 +1,146 @@
+{
+  "MU": {
+    "last_headline": "Micron Raised Its Guidance on Surging Memory Prices. Here's What It Means for the Stock.",
+    "last_classification": "Bullish",
+    "last_reasoning": "Micron directly benefited from surging memory prices and raised its guidance, indicating strong demand and a positive pricing environment. This news is directly positive for Micron.",
+    "last_confidence": 0.95,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T06:49:08.367957+00:00"
+  },
+  "NVDA": {
+    "last_headline": "Overlooked chip ETF is beating biggest AI names",
+    "last_classification": "Uncertain",
+    "last_reasoning": "The news discusses a semiconductor ETF outperforming AI names, but does not directly mention NVDA's specific performance or outlook. While NVDA is a major AI chip player, the article's focus on an 'overlooked' ETF suggests it might be highlighting smaller or different segments of the market, making the direct impact on NVDA unclear without more specific information.",
+    "last_confidence": 0.5,
+    "last_escalated": false,
+    "last_updated": "2026-07-10T05:55:00.543532+00:00"
+  },
+  "AMD": {
+    "last_headline": "Overlooked chip ETF is beating biggest AI names",
+    "last_classification": "Uncertain",
+    "last_reasoning": "AMD is a competitor to NVDA in the AI chip space. While the news highlights broader semiconductor strength, it does not provide specific details on how AMD is positioned relative to the ETF or other AI names mentioned, making its direct impact uncertain.",
+    "last_confidence": 0.4,
+    "last_escalated": false,
+    "last_updated": "2026-07-10T05:55:00.684475+00:00"
+  },
+  "TSM": {
+    "last_headline": "Overlooked chip ETF is beating biggest AI names",
+    "last_classification": "Uncertain",
+    "last_reasoning": "TSM is a key foundry and supplier for many semiconductor companies, including those involved in AI. The article's focus on an ETF outperforming AI names does not directly address TSM's performance or outlook. Its impact remains uncertain without more specific context on the ETF's holdings or the broader supply chain dynamics.",
+    "last_confidence": 0.4,
+    "last_escalated": false,
+    "last_updated": "2026-07-10T05:55:00.819415+00:00"
+  },
+  "MSFT": {
+    "last_headline": "Overlooked chip ETF is beating biggest AI names",
+    "last_classification": "Uncertain",
+    "last_reasoning": "Microsoft is a major consumer of AI chips and a competitor in AI services. The news about an ETF outperforming AI names doesn't directly state its impact on Microsoft's stock. While Microsoft is a major player in AI, the focus on an ETF suggests a nuanced market dynamic that isn't immediately clear for a large-cap tech giant.",
+    "last_confidence": 0.4,
+    "last_escalated": false,
+    "last_updated": "2026-07-10T05:55:00.948695+00:00"
+  },
+  "GOOGL": {
+    "last_headline": "Overlooked chip ETF is beating biggest AI names",
+    "last_classification": "Uncertain",
+    "last_reasoning": "Google (GOOGL) is a major consumer of AI chips and a competitor in AI services. The news about an ETF outperforming AI names doesn't directly state its impact on Google's stock. Similar to MSFT, the focus on an ETF suggests a market dynamic that requires more clarity for a large-cap AI player.",
+    "last_confidence": 0.4,
+    "last_escalated": false,
+    "last_updated": "2026-07-10T05:55:01.079281+00:00"
+  },
+  "GRMN": {
+    "last_headline": "How New Marine and Aviation Updates At Garmin (GRMN) Have Changed Its Investment Story",
+    "last_classification": "Bullish",
+    "last_reasoning": "The news highlights significant product enhancements in Garmin's marine and aviation segments, which are described as 'highest-value specialty markets'. These updates, including improved sonar technology and expanded app features, suggest innovation and a deepening of their product ecosystem, likely to drive revenue and market share.",
+    "last_confidence": 0.85,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T06:50:01.290715+00:00"
+  },
+  "AAPL": {
+    "last_headline": "Overlooked chip ETF is beating biggest AI names",
+    "last_classification": "Uncertain",
+    "last_reasoning": "Apple (AAPL) is a major technology company with significant investments in custom silicon and AI, though its direct exposure to the specific 'AI names' mentioned might be less pronounced than others. The news about an ETF outperforming AI names provides no direct impact information for Apple, making its classification uncertain.",
+    "last_confidence": 0.3,
+    "last_escalated": false,
+    "last_updated": "2026-07-10T05:55:01.214608+00:00"
+  },
+  "QCOM": {
+    "last_headline": "Apple Sales Seen Weathering Hardware Price Increases",
+    "last_classification": "Bullish",
+    "last_reasoning": "QCOM, as a supplier to Apple, is expected to see continued demand for its components if Apple's sales remain robust, supporting QCOM's revenue.",
+    "last_confidence": 0.65,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T06:50:20.311856+00:00"
+  },
+  "SWKS": {
+    "last_headline": "Apple Sales Seen Weathering Hardware Price Increases",
+    "last_classification": "Bullish",
+    "last_reasoning": "SWKS, supplying components to Apple, should benefit from strong Apple sales, indicating sustained demand for SWKS's products.",
+    "last_confidence": 0.65,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T06:50:20.416465+00:00"
+  },
+  "XLE": {
+    "last_headline": "Veteran Energy Analyst: \u201cCrude Oil Is Not the Problem.\u201d Here\u2019s What\u2019s Keeping Gas Prices High.",
+    "last_classification": "Uncertain",
+    "last_reasoning": "The news focuses on refining capacity as the bottleneck for gasoline prices, rather than crude oil supply. This could be bearish for refiners but potentially neutral or slightly bullish for E&P companies if crude oil prices are expected to stabilize or decline due to refining constraints. The overall impact on the broad energy sector ETF (XLE) is uncertain without further analysis of the specific components and their sensitivities.",
+    "last_confidence": 0.6,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T20:57:11.890636+00:00"
+  },
+  "VLO": {
+    "last_headline": "Veteran Energy Analyst: \u201cCrude Oil Is Not the Problem.\u201d Here\u2019s What\u2019s Keeping Gas Prices High.",
+    "last_classification": "Bearish",
+    "last_reasoning": "Valero Energy is a major independent petroleum refiner. The news highlights refining capacity as the key issue keeping gas prices high, implying that refiners are the bottleneck. This could indicate tight margins or operational challenges for refiners like VLO.",
+    "last_confidence": 0.7,
+    "last_escalated": true,
+    "last_updated": "2026-07-09T20:57:12.954049+00:00"
+  },
+  "MPC": {
+    "last_headline": "Veteran Energy Analyst: \u201cCrude Oil Is Not the Problem.\u201d Here\u2019s What\u2019s Keeping Gas Prices High.",
+    "last_classification": "Bearish",
+    "last_reasoning": "Marathon Petroleum Corporation is another major petroleum refiner. Similar to VLO, the news identifying refining capacity as the bottleneck suggests potential challenges or tight margins for MPC's core refining business.",
+    "last_confidence": 0.7,
+    "last_escalated": true,
+    "last_updated": "2026-07-09T20:57:14.168083+00:00"
+  },
+  "PSX": {
+    "last_headline": "Veteran Energy Analyst: \u201cCrude Oil Is Not the Problem.\u201d Here\u2019s What\u2019s Keeping Gas Prices High.",
+    "last_classification": "Bearish",
+    "last_reasoning": "Phillips 66 is a significant player in petroleum refining and midstream operations. The emphasis on refining capacity as a bottleneck suggests potential pressure on margins or operational focus for companies like PSX in their refining segment.",
+    "last_confidence": 0.7,
+    "last_escalated": true,
+    "last_updated": "2026-07-09T20:57:15.389451+00:00"
+  },
+  "XOM": {
+    "last_headline": "Veteran Energy Analyst: \u201cCrude Oil Is Not the Problem.\u201d Here\u2019s What\u2019s Keeping Gas Prices High.",
+    "last_classification": "Neutral",
+    "last_reasoning": "ExxonMobil is an integrated oil and gas company with significant refining operations. While the news highlights refining as a bottleneck, XOM's integrated model (upstream, downstream, chemicals) may mitigate the direct impact compared to pure-play refiners. The effect on their refining segment could be mixed, depending on their specific capacity and market position.",
+    "last_confidence": 0.5,
+    "last_escalated": true,
+    "last_updated": "2026-07-09T20:57:16.192607+00:00"
+  },
+  "CVX": {
+    "last_headline": "Veteran Energy Analyst: \u201cCrude Oil Is Not the Problem.\u201d Here\u2019s What\u2019s Keeping Gas Prices High.",
+    "last_classification": "Neutral",
+    "last_reasoning": "Chevron, like ExxonMobil, is an integrated energy company. The news focusing on refining capacity as the primary constraint for gas prices may have a mixed impact on CVX. Their refining segment could face pressure, but their upstream business might be less affected or even benefit from stable crude prices.",
+    "last_confidence": 0.5,
+    "last_escalated": true,
+    "last_updated": "2026-07-09T20:57:17.392185+00:00"
+  },
+  "CRM": {
+    "last_headline": "Jim Cramer: \u201cCheap Can Still Get Cheaper.\u201d Why He\u2019s Still Avoiding Salesforce",
+    "last_classification": "Bearish",
+    "last_reasoning": "The headline and summary directly reference Jim Cramer's negative outlook on Salesforce (CRM), citing its significant year-to-date and past-year stock price declines and his view that 'cheap can still get cheaper' due to concerns about its growth engine. This commentary from a prominent market commentator suggests continued downward pressure or a lack of immediate buying interest.",
+    "last_confidence": 0.8,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T20:57:33.828831+00:00"
+  },
+  "AVGO": {
+    "last_headline": "Broadcom Stock Investors Just Got Incredible News from Apple CEO Tim Cook",
+    "last_classification": "Bullish",
+    "last_reasoning": "The headline and summary indicate a strengthening partnership between Broadcom (AVGO) and Apple, directly mentioned as a 'win for shareholders'. This suggests positive future revenue streams and strategic alignment for Broadcom.",
+    "last_confidence": 0.9,
+    "last_escalated": false,
+    "last_updated": "2026-07-09T22:59:41.916672+00:00"
+  }
+}
