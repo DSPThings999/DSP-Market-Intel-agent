@@ -1,51 +1,75 @@
 {
   "MU": {
-    "last_headline": "Micron Raised Its Guidance on Surging Memory Prices. Here's What It Means for the Stock.",
+    "last_headline": "FTXL: The \"Situational Awareness Trade\" Still Favors AI-Enabling Chips",
     "last_classification": "Bullish",
-    "last_reasoning": "Micron directly benefited from surging memory prices and raised its guidance, indicating strong demand and a positive pricing environment. This news is directly positive for Micron.",
-    "last_confidence": 0.95,
+    "last_reasoning": "Micron is listed as a company that may benefit from the AI infrastructure buildout, likely due to its memory solutions being critical for AI applications.",
+    "last_confidence": 0.6,
     "last_escalated": false,
-    "last_updated": "2026-07-09T06:49:08.367957+00:00"
+    "last_updated": "2026-08-17T13:38:18.341681+00:00",
+    "last_priority": "watch",
+    "last_current_price": null,
+    "last_expected_price_range": "",
+    "last_chart_read": ""
   },
   "NVDA": {
-    "last_headline": "Overlooked chip ETF is beating biggest AI names",
+    "last_headline": "GDV: Deep Discount And Stable Monthly Payout Make This Attractive",
     "last_classification": "Uncertain",
-    "last_reasoning": "The news discusses a semiconductor ETF outperforming AI names, but does not directly mention NVDA's specific performance or outlook. While NVDA is a major AI chip player, the article's focus on an 'overlooked' ETF suggests it might be highlighting smaller or different segments of the market, making the direct impact on NVDA unclear without more specific information.",
-    "last_confidence": 0.5,
+    "last_reasoning": "The news is about GDV and does not directly mention NVDA. While GDV might be a financial instrument or a different type of company, there's no clear link provided that would directly impact NVDA's price based solely on this article. Any impact would be indirect and speculative.",
+    "last_confidence": 0.3,
     "last_escalated": false,
-    "last_updated": "2026-07-10T05:55:00.543532+00:00"
+    "last_updated": "2026-08-17T13:38:28.446400+00:00",
+    "last_priority": "low",
+    "last_current_price": 225.61,
+    "last_expected_price_range": "",
+    "last_chart_read": "The chart shows NVDA's price trend is up, with the price currently above the 20-day and 50-day moving averages. Volume is normal. This indicates a generally positive short-term trend for NVDA, but it's unrelated to the GDV news."
   },
   "AMD": {
-    "last_headline": "Overlooked chip ETF is beating biggest AI names",
+    "last_headline": "GDV: Deep Discount And Stable Monthly Payout Make This Attractive",
     "last_classification": "Uncertain",
-    "last_reasoning": "AMD is a competitor to NVDA in the AI chip space. While the news highlights broader semiconductor strength, it does not provide specific details on how AMD is positioned relative to the ETF or other AI names mentioned, making its direct impact uncertain.",
-    "last_confidence": 0.4,
+    "last_reasoning": "The article is about GDV, and AMD is listed as a competitor and supplier to NVDA. There is no direct or indirect connection mentioned between GDV and AMD that would indicate a specific price impact. Therefore, the classification remains uncertain.",
+    "last_confidence": 0.3,
     "last_escalated": false,
-    "last_updated": "2026-07-10T05:55:00.684475+00:00"
+    "last_updated": "2026-08-17T13:38:29.038350+00:00",
+    "last_priority": "low",
+    "last_current_price": null,
+    "last_expected_price_range": "",
+    "last_chart_read": ""
   },
   "TSM": {
-    "last_headline": "Overlooked chip ETF is beating biggest AI names",
+    "last_headline": "GDV: Deep Discount And Stable Monthly Payout Make This Attractive",
     "last_classification": "Uncertain",
-    "last_reasoning": "TSM is a key foundry and supplier for many semiconductor companies, including those involved in AI. The article's focus on an ETF outperforming AI names does not directly address TSM's performance or outlook. Its impact remains uncertain without more specific context on the ETF's holdings or the broader supply chain dynamics.",
-    "last_confidence": 0.4,
-    "last_escalated": false,
-    "last_updated": "2026-07-10T05:55:00.819415+00:00"
+    "last_reasoning": "The article concerns GDV. TSM is listed as a competitor and supplier to NVDA. As there is no direct or indirect information linking GDV's performance to TSM, the impact is classified as uncertain.",
+    "last_confidence": 0.3,
+    "last_escalated": true,
+    "last_updated": "2026-08-17T13:38:45.285501+00:00",
+    "last_priority": "low",
+    "last_current_price": null,
+    "last_expected_price_range": "",
+    "last_chart_read": ""
   },
   "MSFT": {
-    "last_headline": "Overlooked chip ETF is beating biggest AI names",
+    "last_headline": "GDV: Deep Discount And Stable Monthly Payout Make This Attractive",
     "last_classification": "Uncertain",
-    "last_reasoning": "Microsoft is a major consumer of AI chips and a competitor in AI services. The news about an ETF outperforming AI names doesn't directly state its impact on Microsoft's stock. While Microsoft is a major player in AI, the focus on an ETF suggests a nuanced market dynamic that isn't immediately clear for a large-cap tech giant.",
-    "last_confidence": 0.4,
+    "last_reasoning": "The news is focused on GDV. MSFT is related to NVDA as a competitor and customer. Without any stated connection between GDV and MSFT or NVDA's business that is impacted by GDV, the impact on MSFT is uncertain.",
+    "last_confidence": 0.3,
     "last_escalated": false,
-    "last_updated": "2026-07-10T05:55:00.948695+00:00"
+    "last_updated": "2026-08-17T13:38:46.015774+00:00",
+    "last_priority": "low",
+    "last_current_price": null,
+    "last_expected_price_range": "",
+    "last_chart_read": ""
   },
   "GOOGL": {
-    "last_headline": "Overlooked chip ETF is beating biggest AI names",
+    "last_headline": "GDV: Deep Discount And Stable Monthly Payout Make This Attractive",
     "last_classification": "Uncertain",
-    "last_reasoning": "Google (GOOGL) is a major consumer of AI chips and a competitor in AI services. The news about an ETF outperforming AI names doesn't directly state its impact on Google's stock. Similar to MSFT, the focus on an ETF suggests a market dynamic that requires more clarity for a large-cap AI player.",
-    "last_confidence": 0.4,
+    "last_reasoning": "The provided news pertains to GDV. Google (GOOGL) is listed as a competitor and customer of NVDA. There is no information in the news that creates a direct or indirect link to GOOGL, hence the impact is uncertain.",
+    "last_confidence": 0.3,
     "last_escalated": false,
-    "last_updated": "2026-07-10T05:55:01.079281+00:00"
+    "last_updated": "2026-08-17T13:40:16.461198+00:00",
+    "last_priority": "low",
+    "last_current_price": null,
+    "last_expected_price_range": "",
+    "last_chart_read": ""
   },
   "GRMN": {
     "last_headline": "How New Marine and Aviation Updates At Garmin (GRMN) Have Changed Its Investment Story",
@@ -56,12 +80,16 @@
     "last_updated": "2026-07-09T06:50:01.290715+00:00"
   },
   "AAPL": {
-    "last_headline": "Overlooked chip ETF is beating biggest AI names",
+    "last_headline": "GDV: Deep Discount And Stable Monthly Payout Make This Attractive",
     "last_classification": "Uncertain",
-    "last_reasoning": "Apple (AAPL) is a major technology company with significant investments in custom silicon and AI, though its direct exposure to the specific 'AI names' mentioned might be less pronounced than others. The news about an ETF outperforming AI names provides no direct impact information for Apple, making its classification uncertain.",
+    "last_reasoning": "The article is about GDV. AAPL is related to NVDA at a country level. There is no information provided that links GDV to AAPL or any sector that AAPL operates in, thus the impact is uncertain.",
     "last_confidence": 0.3,
     "last_escalated": false,
-    "last_updated": "2026-07-10T05:55:01.214608+00:00"
+    "last_updated": "2026-08-17T13:41:47.096791+00:00",
+    "last_priority": "low",
+    "last_current_price": null,
+    "last_expected_price_range": "",
+    "last_chart_read": ""
   },
   "QCOM": {
     "last_headline": "Apple Sales Seen Weathering Hardware Price Increases",
@@ -136,11 +164,51 @@
     "last_updated": "2026-07-09T20:57:33.828831+00:00"
   },
   "AVGO": {
-    "last_headline": "Broadcom Stock Investors Just Got Incredible News from Apple CEO Tim Cook",
+    "last_headline": "FTXL: The \"Situational Awareness Trade\" Still Favors AI-Enabling Chips",
     "last_classification": "Bullish",
-    "last_reasoning": "The headline and summary indicate a strengthening partnership between Broadcom (AVGO) and Apple, directly mentioned as a 'win for shareholders'. This suggests positive future revenue streams and strategic alignment for Broadcom.",
-    "last_confidence": 0.9,
+    "last_reasoning": "Broadcom is named as a company that may be lifted by AI infrastructure buildout, suggesting positive implications for its stock.",
+    "last_confidence": 0.6,
+    "last_escalated": true,
+    "last_updated": "2026-08-17T13:38:17.751127+00:00",
+    "last_priority": "watch",
+    "last_current_price": null,
+    "last_expected_price_range": "",
+    "last_chart_read": ""
+  },
+  "INTC": {
+    "last_headline": "FTXL: The \"Situational Awareness Trade\" Still Favors AI-Enabling Chips",
+    "last_classification": "Bullish",
+    "last_reasoning": "Intel is explicitly mentioned as potentially being lifted by the AI infrastructure buildout, indicating a positive outlook for the company.",
+    "last_confidence": 0.6,
+    "last_priority": "watch",
+    "last_current_price": null,
+    "last_expected_price_range": "",
+    "last_chart_read": "",
+    "last_escalated": true,
+    "last_updated": "2026-08-17T13:37:31.301700+00:00"
+  },
+  "GDV": {
+    "last_headline": "GDV: Deep Discount And Stable Monthly Payout Make This Attractive",
+    "last_classification": "Bullish",
+    "last_reasoning": "The news highlights 'deep discount' and 'stable monthly payout' which are generally positive attributes for investors, suggesting potential undervaluation and reliable income. This information, combined with the stock's historical performance and sector trends, points towards a bullish sentiment.",
+    "last_confidence": 0.7,
+    "last_priority": "watch",
+    "last_current_price": 225.61,
+    "last_expected_price_range": "Given the positive sentiment and the mention of a 'deep discount', if the current trend continues and the market recognizes the value, a plausible range for the next session could be $225-$230.",
+    "last_chart_read": "The chart shows the price is above the 20-day and 50-day moving averages, and the trend has been upward recently, suggesting positive momentum. Volume appears to be normal.",
+    "last_escalated": true,
+    "last_updated": "2026-08-17T13:38:27.667965+00:00"
+  },
+  "COST": {
+    "last_headline": "Prediction: Costco Will Beat the S&P 500 Again",
+    "last_classification": "Uncertain",
+    "last_reasoning": "The headline is a prediction about Costco's future performance relative to the S&P 500. While it suggests a potentially positive outlook ('beat the S&P 500 Again'), it also includes a caveat about high valuation and little room for disappointment. This mixed sentiment and forward-looking nature, without concrete new information, leads to an uncertain classification. The direct ticker provided in the input was NVDA, which is not directly related to this Costco news.",
+    "last_confidence": 0.6,
+    "last_priority": "watch",
+    "last_current_price": null,
+    "last_expected_price_range": "",
+    "last_chart_read": "",
     "last_escalated": false,
-    "last_updated": "2026-07-09T22:59:41.916672+00:00"
+    "last_updated": "2026-08-17T13:49:24.403456+00:00"
   }
 }
