@@ -187,5 +187,14 @@
     "confidence": 0.7,
     "priority": "watch",
     "escalation_reason": "The provided news is about Nvidia (NVDA), but the verdict reasoning focuses entirely on TSMC (TSM), which is only an indirect ticker in the context. The reasoning does not explain why a bullish outlook for Nvidia should be tied to TSMC's potential benefit, nor does it connect to the price/volume context provided for NVDA."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Explore the top gainers and losers within the dow jones index in today's session.",
+    "url": "https://finnhub.io/api/news?id=93ae485a341815fe23fcf7ff4561ae7f48c8b2dacec60a5793cc677ac3351659",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided for the 'Uncertain' classification is generic and does not adequately explain why this news, which is about the Dow Jones index's top gainers/losers, would have an uncertain impact on NVDA (an indirect ticker). The reasoning focuses heavily on AMD, which is an indirect ticker, instead of the primary ticker NVDA mentioned in the direct context. The confidence level is also low (0.3) while the priority is 'watch', which warrants escalation for a more thorough review."
   }
 ]
