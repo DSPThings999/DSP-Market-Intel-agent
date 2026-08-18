@@ -70,5 +70,104 @@
     "confidence": 0.3,
     "priority": "low",
     "escalation_reason": "The article is about 'GDV', which is not present in the ticker context (only NVDA and its related tickers are provided). The verdict attempts to link the news to TSM (which is related to NVDA) but the article itself does not mention GDV in relation to TSM or any other tickers. The reasoning and classification are therefore disconnected from the provided news content. Additionally, the confidence score is low (0.3) and the priority is 'low', but the reason for uncertainty is a fundamental lack of relevance which warrants a closer look."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Nvidia: The Cleanest AI Bet Ahead Of Q2 Earnings (Preview)",
+    "url": "https://finnhub.io/api/news?id=f975e67b269424c2c329941ae9fba7dd21b4dceb7dfe05c7f54cbe2d3fdcc3c9",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The verdict claims 'Uncertain' for NVDA but focuses the reasoning entirely on AMD, a competitor. The reasoning does not mention NVDA's reported strong revenue momentum or hyperscaler demand as stated in the news summary. The classification should be directly related to NVDA, not solely speculative on a competitor, especially with low confidence."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Nvidia: The Cleanest AI Bet Ahead Of Q2 Earnings (Preview)",
+    "url": "https://finnhub.io/api/news?id=f975e67b269424c2c329941ae9fba7dd21b4dceb7dfe05c7f54cbe2d3fdcc3c9",
+    "classification": "Uncertain",
+    "confidence": 0.6,
+    "priority": "watch",
+    "escalation_reason": "The verdict for NVDA (the primary ticker) is 'Uncertain' and the reasoning provided is entirely focused on TSMC. The news headline and summary are about NVDA's upcoming earnings, not TSMC. The verdict doesn't explain its reasoning in relation to NVDA's specific earnings preview or the price/volume context provided for NVDA. The focus on TSMC seems misplaced given the primary news item."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Nvidia: The Cleanest AI Bet Ahead Of Q2 Earnings (Preview)",
+    "url": "https://finnhub.io/api/news?id=f975e67b269424c2c329941ae9fba7dd21b4dceb7dfe05c7f54cbe2d3fdcc3c9",
+    "classification": "Uncertain",
+    "confidence": 0.6,
+    "priority": "watch",
+    "escalation_reason": "The verdict provided is for Microsoft (MSFT), but the news article and most of the ticker context is about Nvidia (NVDA). The reasoning provided for MSFT focuses on its role as a cloud provider and customer of AI chips, which is a reasonable, but indirect, connection to the NVDA news. However, the reasoning doesn't explicitly link the 'strong revenue momentum' and 'elevated Hopper cloud rental pricing' from the NVDA news to MSFT's specific business drivers beyond a general statement about AI services. Given the strong focus of the article on NVDA, and the indirect connection to MSFT, a deeper look is warranted to understand how NVDA's earnings performance is expected to impact MSFT specifically, beyond the general market sentiment."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "Nvidia: The Cleanest AI Bet Ahead Of Q2 Earnings (Preview)",
+    "url": "https://finnhub.io/api/news?id=f975e67b269424c2c329941ae9fba7dd21b4dceb7dfe05c7f54cbe2d3fdcc3c9",
+    "classification": "Uncertain",
+    "confidence": 0.6,
+    "priority": "watch",
+    "escalation_reason": "The classification and reasoning are focused on GOOGL, but the news and ticker context are about NVDA. The verdict does not appear to be based on the provided news item for NVDA. The reasoning is also vague and does not leverage the specific details of the NVDA news (e.g., hyperscaler demand, Hopper pricing)."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "Nvidia: The Cleanest AI Bet Ahead Of Q2 Earnings (Preview)",
+    "url": "https://finnhub.io/api/news?id=f975e67b269424c2c329941ae9fba7dd21b4dceb7dfe05c7f54cbe2d3fdcc3c9",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "low",
+    "escalation_reason": "The verdict is for NVDA, but the reasoning and risk/opportunity sections focus almost entirely on AAPL, which is only a country-peer and not directly involved in the news about Nvidia's Q2 earnings and hyperscaler demand. The classification of 'Uncertain' seems to be derived from a misunderstanding of the ticker context, applying general tech sector insights to AAPL instead of assessing the specifics of NVDA's earnings preview."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "BST: This Income Machine Can Still Work After Reaching $50",
+    "url": "https://finnhub.io/api/news?id=b5c380b6b2e2927db6bc86716c92f45dc841432586987086e79ae1897f03d2c6",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The verdict classification of 'Uncertain' is not supported by the provided news, which is about BST (BlackRock Science & Technology Trust) and its investments, not AMD or NVDA directly. The reasoning focuses on AMD's competitive relationship with NVDA in AI, which is not the subject of the news. The price context for NVDA is also mentioned as mixed, but the news itself is about BST and seems positive ('Income Machine Can Still Work'). There's a significant disconnect between the news content and the verdict's focus and conclusion."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "BST: This Income Machine Can Still Work After Reaching $50",
+    "url": "https://finnhub.io/api/news?id=b5c380b6b2e2927db6bc86716c92f45dc841432586987086e79ae1897f03d2c6",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The classification is 'Uncertain' with a low confidence (0.5) and 'watch' priority, which already suggests a need for escalation. The reasoning is vague, referencing potential indirect impacts on TSM based on AI chip demand without concrete links or strong evidence from the provided news. The news is about a specific income trust (BST), not directly about TSM or its core business drivers. The reasoning incorrectly links TSM to AI chip demand based on a headline about BST's AI exposure. The mention of NVDA/AMD in the context seems to be a misapplication, as the news is about BST, an income trust, not a semiconductor manufacturer."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "BST: This Income Machine Can Still Work After Reaching $50",
+    "url": "https://finnhub.io/api/news?id=b5c380b6b2e2927db6bc86716c92f45dc841432586987086e79ae1897f03d2c6",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The verdict is for GOOGL, but the news headline and summary are about BST (BlackRock Science & Technology Trust). The reasoning mentions AI investments and cloud business, which are relevant to GOOGL, but the connection to the provided news is tenuous and not explained. The summary mentions Anthropic/Databricks, which are not directly tied to GOOGL in the context provided. The classification of \"Uncertain\" with low confidence (0.5) on a \"watch\" priority warrants escalation due to the weak link between the news and the ticker."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "BST: This Income Machine Can Still Work After Reaching $50",
+    "url": "https://finnhub.io/api/news?id=b5c380b6b2e2927db6bc86716c92f45dc841432586987086e79ae1897f03d2c6",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The reasoning is vague and does not explain how the news about BST (BlackRock Science & Technology Trust) and its AI exposure relates to AAPL, even indirectly. The confidence is low (0.4) and the priority is 'watch', which warrants escalation due to the lack of clear connection and justification."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "AI Is Not A Bubble: 4 Income Ideas To Ride The Wave",
+    "url": "https://finnhub.io/api/news?id=77453322fe1810b5de21ec7eeeb1b8a7a5d439d60f9c8386cc5c4778857532e8",
+    "classification": "Bullish",
+    "confidence": 0.6,
+    "priority": "watch",
+    "escalation_reason": "The verdict claims 'Microsoft is a major consumer of AI hardware and services' and links the bullish outlook on AI to increased demand for its cloud services. However, the provided news headline and summary are about 'AI Is Not A Bubble: 4 Income Ideas To Ride The Wave' and do not specifically mention Microsoft or its services. The reasoning appears to be generalized to the AI sector rather than being tied to the specific content of the news article. While MSFT is listed as an indirect ticker related to NVDA, the reasoning does not connect the news to MSFT's role as a competitor/customer or how the 'income ideas' would specifically benefit MSFT. The confidence is only 0.6 and the priority is 'watch', which warrants escalation given the weak connection between the news content and the stated reasoning for MSFT."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "AI Is Not A Bubble: 4 Income Ideas To Ride The Wave",
+    "url": "https://finnhub.io/api/news?id=77453322fe1810b5de21ec7eeeb1b8a7a5d439d60f9c8386cc5c4778857532e8",
+    "classification": "Bullish",
+    "confidence": 0.6,
+    "priority": "watch",
+    "escalation_reason": "The provided news is a general opinion piece about AI, not specific news about GOOGL. The verdict incorrectly applies the reasoning to GOOGL, referencing its AI initiatives and cloud business, but this is not supported by the actual news content which is a broader market commentary. The news is not about GOOGL, but the verdict assumes it is. The price/volume context is also not used in the reasoning."
   }
 ]
