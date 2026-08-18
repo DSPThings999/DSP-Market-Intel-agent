@@ -169,5 +169,23 @@
     "confidence": 0.6,
     "priority": "watch",
     "escalation_reason": "The provided news is a general opinion piece about AI, not specific news about GOOGL. The verdict incorrectly applies the reasoning to GOOGL, referencing its AI initiatives and cloud business, but this is not supported by the actual news content which is a broader market commentary. The news is not about GOOGL, but the verdict assumes it is. The price/volume context is also not used in the reasoning."
+  },
+  {
+    "ticker": "NVDA",
+    "headline": "Nvidia's Q2 Preview: A $7 Trillion Market Cap Within Reach",
+    "url": "https://finnhub.io/api/news?id=2c9fd5b4a29b335a95254bf04e23a19d41c7d6acf84641325d2ac1db5d1a52fb",
+    "classification": "Bullish",
+    "confidence": 0.8,
+    "priority": "urgent",
+    "escalation_reason": "The classification is 'Bullish' with 'urgent' priority and high confidence (0.8), yet the price/volume context is 'flat' and 'low volatility'. The reasoning does not explain this divergence. The headline itself is a question ('A $7 Trillion Market Cap Within Reach') and the summary explicitly states an FQ2 beat 'isn't enough', which contradicts the bullish sentiment without clear justification in the reasoning. The chart read mentions 'some notable increases' in volume, but the provided price_volume_context states 'normal' volume trend, creating a potential discrepancy."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Nvidia's Q2 Preview: A $7 Trillion Market Cap Within Reach",
+    "url": "https://finnhub.io/api/news?id=2c9fd5b4a29b335a95254bf04e23a19d41c7d6acf84641325d2ac1db5d1a52fb",
+    "classification": "Bullish",
+    "confidence": 0.7,
+    "priority": "watch",
+    "escalation_reason": "The provided news is about Nvidia (NVDA), but the verdict reasoning focuses entirely on TSMC (TSM), which is only an indirect ticker in the context. The reasoning does not explain why a bullish outlook for Nvidia should be tied to TSMC's potential benefit, nor does it connect to the price/volume context provided for NVDA."
   }
 ]
