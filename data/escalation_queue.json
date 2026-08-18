@@ -196,5 +196,14 @@
     "confidence": 0.3,
     "priority": "watch",
     "escalation_reason": "The reasoning provided for the 'Uncertain' classification is generic and does not adequately explain why this news, which is about the Dow Jones index's top gainers/losers, would have an uncertain impact on NVDA (an indirect ticker). The reasoning focuses heavily on AMD, which is an indirect ticker, instead of the primary ticker NVDA mentioned in the direct context. The confidence level is also low (0.3) while the priority is 'watch', which warrants escalation for a more thorough review."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "US working on deconfliction mechanism among Turkey, Israel and Syria, US envoy says - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVlZuUXBialdJbERhTVMyN3NRUkxUY251V1g4c3RDS0EyUnNEVWhNcGVFTFNETFZRLTJFcUpWaEdwS0NuQ1FTck1mNURabzBNbnMtNV9RRDQzQ1d2RHlHUHFlNWdPUFlselFNSElSVmJ1ZklSUlUyaGdCbVEwMTE3YnlzMG0yUkQyNWJZSHpHVFgwZlhkTHlDaUxNMGlzQ1VVM01WaTRSVDNLZjJJT2Z3WkttVW5RZFM0R3h2M0tDSklkZGhoSkhJ?oc=5",
+    "classification": "Uncertain",
+    "confidence": 0.1,
+    "priority": "watch",
+    "escalation_reason": "The reasoning is vague and does not explain why the geopolitical news is relevant to AAPL. The confidence is also very low (0.1) while the priority is 'watch'."
   }
 ]
