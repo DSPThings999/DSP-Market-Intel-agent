@@ -205,5 +205,131 @@
     "confidence": 0.1,
     "priority": "watch",
     "escalation_reason": "The reasoning is vague and does not explain why the geopolitical news is relevant to AAPL. The confidence is also very low (0.1) while the priority is 'watch'."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "NVIDIA (NASDAQ:NVDA) Qualifies as an Affordable Growth Pick",
+    "url": "https://finnhub.io/api/news?id=c76fb2ffc4b6a48e2bb32a05ecaa356238a074c97e35811359aa83d3f9934d42",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "low",
+    "escalation_reason": "The classification for TSM is 'Uncertain' with a confidence of 0.4, but the reasoning provided focuses entirely on TSM's potential indirect benefit from NVIDIA's news, not on the actual news content itself or the price/volume context for TSM. It's unclear why TSM is flagged as uncertain based on this reasoning, especially given the low confidence. The reasoning does not explain the uncertainty for TSM."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "NVIDIA (NASDAQ:NVDA) Qualifies as an Affordable Growth Pick",
+    "url": "https://finnhub.io/api/news?id=c76fb2ffc4b6a48e2bb32a05ecaa356238a074c97e35811359aa83d3f9934d42",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "low",
+    "escalation_reason": "The original verdict focuses on the indirect ticker (MSFT) and its relationship with NVDA, which is not the primary focus of the news. The news itself is a bullish article about NVDA, stating it is an 'affordable growth pick' with strong financials. The verdict's reasoning is vague and does not address the core sentiment of the article regarding NVDA. The confidence is also low (0.4) and the priority is 'low', but the reasoning is fundamentally misaligned with the news content."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "NVIDIA (NASDAQ:NVDA) Qualifies as an Affordable Growth Pick",
+    "url": "https://finnhub.io/api/news?id=c76fb2ffc4b6a48e2bb32a05ecaa356238a074c97e35811359aa83d3f9934d42",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "low",
+    "escalation_reason": "The reasoning provided focuses entirely on indirect impacts from competitors/customers (Google, Microsoft) and fails to address the core claims of the headline and summary about NVIDIA's \"affordable growth pick\" status, its strong earnings/revenue growth, forward P/E, and profitability/health. The classification 'Uncertain' and low confidence (0.4) are not sufficiently justified by the explanation given. The price/volume context (down price trend) is also not reconciled with the news."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "NVIDIA (NASDAQ:NVDA) Qualifies as an Affordable Growth Pick",
+    "url": "https://finnhub.io/api/news?id=c76fb2ffc4b6a48e2bb32a05ecaa356238a074c97e35811359aa83d3f9934d42",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "low",
+    "escalation_reason": "The reasoning provided is nonsensical. It claims the news is uncertain because Apple is in the same country market as NVIDIA, yet the news itself is exclusively about NVIDIA's growth and valuation metrics. The reasoning does not logically connect to the news content or the classification. The confidence is also low (0.3), making the \"Uncertain\" classification and \"low\" priority questionable for a piece of news that is clearly focused on NVDA and not AAPL."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Wall Street Sinks as 30-Year Yield Hits 19-Year High, Chip Names Crumble",
+    "url": "https://finnhub.io/api/news?id=62931e0861f4d587e501c84a06cf467fff02e73396bc22fd37f2c5a19c943e4b",
+    "classification": "Bearish",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The verdict is for TSM, but the reasoning provided focuses on NVDA as a supplier and a general downturn in semiconductors. The news headline itself mentions chip names crumbling, and the price/volume context for NVDA is 'down' with 'normal' volume, indicating a potential sector-wide issue. However, the reasoning doesn't explain how TSM specifically is affected beyond a general susceptibility, and the confidence is low (0.5) while the priority is 'watch', suggesting a need for more specific analysis on TSM's direct impact."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Wall Street Sinks as 30-Year Yield Hits 19-Year High, Chip Names Crumble",
+    "url": "https://finnhub.io/api/news?id=62931e0861f4d587e501c84a06cf467fff02e73396bc22fd37f2c5a19c943e4b",
+    "classification": "Bearish",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided for MSFT is speculative and doesn't directly connect to MSFT's specific performance or news. The news highlights a general market downturn and weakness in chip names (NVDA), but the reasoning jumps to how this impacts MSFT without specific evidence or context for MSFT itself. The confidence level is also low (0.4) while the priority is 'watch', suggesting a need for further review before alerting."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "Wall Street Sinks as 30-Year Yield Hits 19-Year High, Chip Names Crumble",
+    "url": "https://finnhub.io/api/news?id=62931e0861f4d587e501c84a06cf467fff02e73396bc22fd37f2c5a19c943e4b",
+    "classification": "Bearish",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided is vague and does not directly connect the news to the specific ticker (NVDA). It mentions \"similar to MSFT, GOOGL's involvement\" which is irrelevant to NVDA. The confidence is low (0.4) and the priority is 'watch', which combined with the vague reasoning, warrants escalation."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "Wall Street Sinks as 30-Year Yield Hits 19-Year High, Chip Names Crumble",
+    "url": "https://finnhub.io/api/news?id=62931e0861f4d587e501c84a06cf467fff02e73396bc22fd37f2c5a19c943e4b",
+    "classification": "Bearish",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided for AAPL being 'Bearish' is vague and does not specifically tie into AAPL's business or news, relying on generic 'broad market downturns' and 'sector sentiment'. The news headline mentions chip names crumbling, but AAPL is not primarily a chip manufacturer. The confidence is low (0.3) and the priority is 'watch', which is a combination that warrants escalation for a deeper look into whether AAPL is actually impacted by these specific factors or if this is a false positive classification due to the broad market headline."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Nvidia: Upgrade To Strong Buy On Elongation Of GPU Cycle, Value",
+    "url": "https://finnhub.io/api/news?id=09bf27246db2d730d5ebb857c0f57903c8faaa5738e465411f67278caaf51866",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The verdict is 'Uncertain' but the reasoning provided is vague and speculative, not directly explaining the uncertainty based on the news or price/volume context. The news itself is an analyst upgrade for NVDA (not AMD), and the verdict's reasoning focuses on potential indirect impacts on AMD, which is confusing as the verdict classification is for AMD. The confidence is low (0.5) and priority is 'watch', but the reasoning doesn't clearly justify the uncertainty or provide a basis for the 'watch' status."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Nvidia: Upgrade To Strong Buy On Elongation Of GPU Cycle, Value",
+    "url": "https://finnhub.io/api/news?id=09bf27246db2d730d5ebb857c0f57903c8faaa5738e465411f67278caaf51866",
+    "classification": "Uncertain",
+    "confidence": 0.6,
+    "priority": "watch",
+    "escalation_reason": "The original verdict appears to be for Nvidia (NVDA) based on the headline and summary, but the reasoning provided focuses entirely on TSMC (a supplier to Nvidia), not Nvidia itself. The classification is 'Uncertain' for NVDA, but the reasoning explains why TSMC might be affected, which is not directly relevant to Nvidia's outlook from this news. Additionally, the confidence is 0.6, and the priority is 'watch', but the reasoning does not adequately justify the 'Uncertain' classification or connect the provided information to Nvidia's stock performance. The price trend for NVDA is 'down', which contradicts the bullish sentiment of the headline ('Upgrade To Strong Buy'). This divergence needs explanation."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Nvidia: Upgrade To Strong Buy On Elongation Of GPU Cycle, Value",
+    "url": "https://finnhub.io/api/news?id=09bf27246db2d730d5ebb857c0f57903c8faaa5738e465411f67278caaf51866",
+    "classification": "Uncertain",
+    "confidence": 0.55,
+    "priority": "watch",
+    "escalation_reason": "The provided verdict is for Microsoft (MSFT) and not Nvidia (NVDA), which is the subject of the news headline and summary. The reasoning discusses potential impacts on Microsoft's costs and margins due to Nvidia's supply situation, which is a plausible concern. However, the news is about an upgrade for NVDA, not a discussion of its impact on customers like MSFT. The classification 'Uncertain' and confidence level of 0.55 seem low given the news is a positive analyst upgrade for NVDA. The entire premise of the verdict needs to be re-evaluated for the correct ticker."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "Nvidia: Upgrade To Strong Buy On Elongation Of GPU Cycle, Value",
+    "url": "https://finnhub.io/api/news?id=09bf27246db2d730d5ebb857c0f57903c8faaa5738e465411f67278caaf51866",
+    "classification": "Uncertain",
+    "confidence": 0.55,
+    "priority": "watch",
+    "escalation_reason": "The verdict is for GOOGL, but the news headline and summary are about NVDA. The reasoning mentions GOOGL as a customer of NVDA's GPUs, which is indirect relevance at best. The classification of 'Uncertain' for GOOGL based on NVDA news seems like a stretch and unsupported without further context linking the NVDA upgrade directly to a specific impact on GOOGL's business beyond general GPU supply/cost concerns."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "NVDY Isn't The Fund It Was - Because Nvidia Isn't The Stock It Was",
+    "url": "https://finnhub.io/api/news?id=2b56a5687bdc80333f6fced8d708f8cdc6035e7faf00a87c0bf26aa4107159d3",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The original verdict classified the news as 'Uncertain' for AMD, but the reasoning provided is generic and doesn't specifically address how AMD would be impacted by Nvidia's (NVDY's) reduced option income and upside due to falling volatility. While the risk and opportunity sections are relevant to AMD as a competitor, the core reasoning for the 'Uncertain' classification lacks specificity and the confidence level is low (0.4) coupled with a 'watch' priority, warranting escalation."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "NVDY Isn't The Fund It Was - Because Nvidia Isn't The Stock It Was",
+    "url": "https://finnhub.io/api/news?id=2b56a5687bdc80333f6fced8d708f8cdc6035e7faf00a87c0bf26aa4107159d3",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The reasoning is vague and does not directly address the provided news headline about the NVDY fund (YieldMax NVDY), instead focusing on NVDA's performance and TSMC as a supplier. The confidence is low (0.4) and the priority is 'watch', which necessitates escalation. The news itself is about a specific fund's downgrade due to Nvidia's changing volatility, not directly about NVDA's chip demand or TSMC's orders."
   }
 ]
