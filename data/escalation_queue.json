@@ -331,5 +331,14 @@
     "confidence": 0.4,
     "priority": "watch",
     "escalation_reason": "The reasoning is vague and does not directly address the provided news headline about the NVDY fund (YieldMax NVDY), instead focusing on NVDA's performance and TSMC as a supplier. The confidence is low (0.4) and the priority is 'watch', which necessitates escalation. The news itself is about a specific fund's downgrade due to Nvidia's changing volatility, not directly about NVDA's chip demand or TSMC's orders."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Which stocks are most active on Wednesday?",
+    "url": "https://finnhub.io/api/news?id=709907e313da67eb9297d61718e239cfbac798b8fcaa3222f3077e4bb4eb234f",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The verdict claims 'Uncertain' for MSFT based on a generic \"most active stocks\" headline which provides no specific information about MSFT's trading activity or news. The reasoning about market activity for NVDA potentially impacting MSFT is speculative and not directly supported by the headline, especially since MSFT is listed as an indirect ticker. The confidence is low (0.4) and the priority is 'watch', which warrants escalation due to the lack of concrete connection between the news and the ticker's potential impact."
   }
 ]
