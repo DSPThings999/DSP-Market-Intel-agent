@@ -340,5 +340,122 @@
     "confidence": 0.4,
     "priority": "watch",
     "escalation_reason": "The verdict claims 'Uncertain' for MSFT based on a generic \"most active stocks\" headline which provides no specific information about MSFT's trading activity or news. The reasoning about market activity for NVDA potentially impacting MSFT is speculative and not directly supported by the headline, especially since MSFT is listed as an indirect ticker. The confidence is low (0.4) and the priority is 'watch', which warrants escalation due to the lack of concrete connection between the news and the ticker's potential impact."
+  },
+  {
+    "ticker": "NVDA",
+    "headline": "Nvidia FQ2 Preview: I'm Seeing A 50%+ FCF Discount",
+    "url": "https://finnhub.io/api/news?id=b77380b3f8123ad2ebbb78612bce447fe5a9fecb805b09a4d0898abf53ad90f8",
+    "classification": "Bullish",
+    "confidence": 0.8,
+    "priority": "urgent",
+    "escalation_reason": "The verdict is Bullish and assigns Urgent priority, but the price_trend is 'down' and volatility is 'low'. The reasoning mentions potential upside and undervaluation, but does not reconcile this with the current downward price trend, making the bullish conclusion appear unsupported by the price action context."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Nvidia FQ2 Preview: I'm Seeing A 50%+ FCF Discount",
+    "url": "https://finnhub.io/api/news?id=b77380b3f8123ad2ebbb78612bce447fe5a9fecb805b09a4d0898abf53ad90f8",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The verdict is classified as 'Uncertain' for TSM, but the provided news item is specifically about Nvidia (NVDA) and its deal with OpenAI, not TSM. The reasoning about TSM's potential involvement is speculative and not directly supported by the news headline or summary. The classification and reasoning should be focused on the primary ticker (NVDA) mentioned in the news, or clearly state if it's an assessment of an indirect ticker."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Nvidia FQ2 Preview: I'm Seeing A 50%+ FCF Discount",
+    "url": "https://finnhub.io/api/news?id=b77380b3f8123ad2ebbb78612bce447fe5a9fecb805b09a4d0898abf53ad90f8",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The classification is for NVDA, but the reasoning provided focuses solely on MSFT, which is an indirect ticker. The news headline itself also mentions NVDA directly with a bullish tone ('50%+ FCF Discount', 'NVDA stock is a buy'). The verdict fails to address the direct ticker or the news's explicit mention of NVDA, and instead offers a tangential and uncertain perspective on an indirect competitor/customer."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "Nvidia FQ2 Preview: I'm Seeing A 50%+ FCF Discount",
+    "url": "https://finnhub.io/api/news?id=b77380b3f8123ad2ebbb78612bce447fe5a9fecb805b09a4d0898abf53ad90f8",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided for the 'Uncertain' classification incorrectly focuses on Google (GOOGL), which is listed as an indirect competitor/customer but not the primary subject of the news. The news headline and summary are about Nvidia (NVDA) and a deal with OpenAI, not about Google's competitive position. The reasoning needs to be re-evaluated to focus on the actual news impacting NVDA and OpenAI."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Investing In The Building Blocks Of The Humanoid Revolution - Part 2 (The Brain)",
+    "url": "https://finnhub.io/api/news?id=27169b49a8a67e1d061d882987a133367971362d000faef12ba8ecd56b2edb02",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided for AMD is vague and doesn't clearly link the article's content to AMD's specific situation. While acknowledging AMD is a competitor, it states the article doesn't mention AMD, then proceeds to justify the 'Uncertain' classification based on the general AI trend and comparison to NVDA. The low confidence (0.4) coupled with a 'watch' priority warrants escalation, especially given the price trend is down and volume is normal, which could be interpreted differently depending on how AMD fits into the broader 'humanoid revolution' narrative. The reasoning doesn't offer a strong conviction for the 'Uncertain' classification beyond a general observation."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Investing In The Building Blocks Of The Humanoid Revolution - Part 2 (The Brain)",
+    "url": "https://finnhub.io/api/news?id=27169b49a8a67e1d061d882987a133367971362d000faef12ba8ecd56b2edb02",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The reasoning and opportunities/risks do not directly address the relationship between the article's content (humanoid brains, specialized modular assembly) and the specific ticker (TSM). While TSM is a semiconductor manufacturer, the connection to 'humanoid brains' and 'specialized modular assembly' is too vague. The low confidence (0.4) combined with a 'watch' priority warrants escalation to ensure the connection is clearly articulated or confirmed."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Investing In The Building Blocks Of The Humanoid Revolution - Part 2 (The Brain)",
+    "url": "https://finnhub.io/api/news?id=27169b49a8a67e1d061d882987a133367971362d000faef12ba8ecd56b2edb02",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The confidence is low (0.4) but the priority is 'watch'. The reasoning is generic and does not strongly connect the article's theme to MSFT's business beyond a general association with AI and cloud computing, which is not a specific insight. The opportunities and risks are speculative and not directly supported by the article's content. Given the low confidence and the 'watch' priority, this warrants a closer look to see if there are more concrete connections or if it should be downgraded."
+  },
+  {
+    "ticker": "NVDA",
+    "headline": "Samsung Tumbled Nearly 8% in Seoul Even as AI Demand Drives Chip Prices Up To 15%",
+    "url": "https://finnhub.io/api/news?id=e551fabc0eaf1bf604fb78bf3da7ac26bae8cd8888398860076567dbc0a75d32",
+    "classification": "Bullish",
+    "confidence": 0.75,
+    "priority": "urgent",
+    "escalation_reason": "The verdict states 'Bullish' for NVDA based on Samsung's price increases, but the provided price_trend for NVDA is 'down' and the reasoning doesn't explain how NVDA benefits from Samsung's stock falling nearly 8% even as Samsung raises prices. The price/volume context is for NVDA, but the news is about Samsung. The relationship between Samsung's stock movement and NVDA's future price is not clearly explained, especially given the divergent price trends."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Samsung Tumbled Nearly 8% in Seoul Even as AI Demand Drives Chip Prices Up To 15%",
+    "url": "https://finnhub.io/api/news?id=e551fabc0eaf1bf604fb78bf3da7ac26bae8cd8888398860076567dbc0a75d32",
+    "classification": "Bullish",
+    "confidence": 0.6,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided for classifying AMD as 'Bullish' does not adequately explain how the news about Samsung's stock falling despite price increases for AI chips impacts AMD. The summary states Samsung's shares fell nearly 8% while raising chip prices, indicating a complex situation that isn't simply a net positive for the sector. The verdict assumes AMD will benefit without addressing the contradictory signals in the Samsung news (stock falling despite price hikes) and the overall price_trend being 'down'. More analysis is needed to connect Samsung's specific situation to AMD's potential outcome."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Samsung Tumbled Nearly 8% in Seoul Even as AI Demand Drives Chip Prices Up To 15%",
+    "url": "https://finnhub.io/api/news?id=e551fabc0eaf1bf604fb78bf3da7ac26bae8cd8888398860076567dbc0a75d32",
+    "classification": "Bullish",
+    "confidence": 0.8,
+    "priority": "urgent",
+    "escalation_reason": "The verdict states the classification is 'Bullish' and the reasoning focuses on TSM benefiting from AI chip demand and price increases. However, the news headline explicitly states Samsung (a competitor and major chip manufacturer) \"Tumbled Nearly 8%\". The verdict fails to address this direct contradiction in market sentiment between Samsung and the implied positive outlook for TSM. Furthermore, the verdict completely ignores the price/volume context which shows a 'down' price trend for the ticker being evaluated, making the 'Bullish' classification highly questionable without further explanation."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Samsung Tumbled Nearly 8% in Seoul Even as AI Demand Drives Chip Prices Up To 15%",
+    "url": "https://finnhub.io/api/news?id=e551fabc0eaf1bf604fb78bf3da7ac26bae8cd8888398860076567dbc0a75d32",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided by the AI is overly focused on MSFT despite MSFT not being the primary subject of the news. The news is about Samsung's chip prices and stock performance, with only indirect relevance to NVDA and its competitors/customers. The low confidence (0.4) coupled with a 'watch' priority warrants escalation to ensure the true market impact is understood."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "Samsung Tumbled Nearly 8% in Seoul Even as AI Demand Drives Chip Prices Up To 15%",
+    "url": "https://finnhub.io/api/news?id=e551fabc0eaf1bf604fb78bf3da7ac26bae8cd8888398860076567dbc0a75d32",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The verdict is \"Uncertain\" for GOOGL, but the reasoning provided is focused on MSFT and GOOGL's role as a consumer of AI chips, and doesn't acknowledge the \"Samsung Tumbled Nearly 8%\" aspect of the headline or relate it to GOOGL. The confidence is also low (0.4) while the priority is \"watch\", indicating a need for deeper review."
+  },
+  {
+    "ticker": "NVDA",
+    "headline": "'China Eases Limits On NVIDIA H200 Chips As AI Race Escalates; Beijing Permits Small Shipments To Help Leading Tech Groups In Drive To Catch Up With U.S. Rivals' - Financial Times",
+    "url": "https://finnhub.io/api/news?id=f3b54bed45cae16d5770db0c5b6a6167e474b3acd789e09a814bf92dc512a5f8",
+    "classification": "Bullish",
+    "confidence": 0.75,
+    "priority": "urgent",
+    "escalation_reason": "The chart read states \"recent upward trend after a period of decline\" and \"price currently trading above the 50-day moving average,\" which directly contradicts the provided price_trend of \"down.\" This inconsistency requires further investigation before confirming the bullish classification."
   }
 ]
