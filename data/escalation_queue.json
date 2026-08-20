@@ -466,5 +466,23 @@
     "confidence": 0.4,
     "priority": "watch",
     "escalation_reason": "The verdict focuses on AAPL, which is listed as a country peer and not a direct ticker. The reasoning doesn't explain why this specific news about CoreWeave and Nvidia would have a significant impact (positive or negative) on Apple, especially given the low confidence score and the fact that Apple is not directly mentioned in the headline or summary. The classification 'Uncertain' feels like a default rather than a conclusion drawn from the provided context regarding AAPL."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Looking for the most active stocks in the S&P500 index on Thursday?",
+    "url": "https://finnhub.io/api/news?id=de80fd99b19d51b1c063dd5d4eb7830387e2c641e2ad3bda312e7bbd5d6af86f",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The verdict states \"Uncertain\" due to a lack of specific news for AMD, but the reasoning provided is generic and doesn't leverage the given context that AMD is a competitor/supplier to NVDA. The low confidence (0.3) combined with a \"watch\" priority warrants escalation."
+  },
+  {
+    "ticker": "NVDA",
+    "headline": "VP Of Taiwan Semiconductor Makes $174K Buy",
+    "url": "https://finnhub.io/api/news?id=4b9869a333e68cc77486bcc5894f56e1ef345161167646d224cf301caae4e67d",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The verdict is for NVDA, but the news is about TSM. The reasoning provided is vague and does not explain how TSM's insider buy directly impacts NVDA. The confidence is low (0.4) and the priority is 'watch', which is a good candidate for escalation."
   }
 ]
