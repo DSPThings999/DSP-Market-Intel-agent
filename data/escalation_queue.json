@@ -457,5 +457,14 @@
     "confidence": 0.75,
     "priority": "urgent",
     "escalation_reason": "The chart read states \"recent upward trend after a period of decline\" and \"price currently trading above the 50-day moving average,\" which directly contradicts the provided price_trend of \"down.\" This inconsistency requires further investigation before confirming the bullish classification."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "CoreWeave Lands Multibillion-Dollar Hudson River Deal as Wall Street Races for Nvidia Chips",
+    "url": "https://finnhub.io/api/news?id=8cfc4b742ab1b52daa98e5678147ad342d5e9dcaefdd61ad243bcce4ee50dc4c",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The verdict focuses on AAPL, which is listed as a country peer and not a direct ticker. The reasoning doesn't explain why this specific news about CoreWeave and Nvidia would have a significant impact (positive or negative) on Apple, especially given the low confidence score and the fact that Apple is not directly mentioned in the headline or summary. The classification 'Uncertain' feels like a default rather than a conclusion drawn from the provided context regarding AAPL."
   }
 ]
