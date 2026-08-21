@@ -592,5 +592,14 @@
     "confidence": 0.3,
     "priority": "watch",
     "escalation_reason": "The reasoning is highly speculative and does not directly connect the news to the ticker. The news is about a 13F filing update for Gabelli Funds, which is a routine disclosure of holdings. The reasoning incorrectly extrapolates potential sentiment shifts regarding MSFT based on hypothetical changes in Gabelli's NVDA holdings, without any specific information from the news about those holdings or their impact on MSFT. The confidence level is very low (0.3), while the priority is 'watch', indicating a need for escalation due to low confidence in the reasoning."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "The Boring Way To Own AI Is Now The Cheap Way",
+    "url": "https://finnhub.io/api/news?id=33b759ae54ec2c1b7dd390a8b24d7dd5de93dea22c3e3bcb0be1805704410c5b",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided for AMD is vague and doesn't connect directly to the headline's core point about AI CapEx turning into earnings. It focuses too much on \"discounted valuations\" as a general concept and doesn't explain why this specific news might be uncertain for AMD. Furthermore, the confidence score of 0.5 coupled with a 'watch' priority warrants escalation for a deeper look into how AMD might be specifically impacted, rather than relying on generic sector analysis."
   }
 ]
