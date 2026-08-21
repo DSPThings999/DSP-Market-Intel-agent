@@ -601,5 +601,32 @@
     "confidence": 0.5,
     "priority": "watch",
     "escalation_reason": "The reasoning provided for AMD is vague and doesn't connect directly to the headline's core point about AI CapEx turning into earnings. It focuses too much on \"discounted valuations\" as a general concept and doesn't explain why this specific news might be uncertain for AMD. Furthermore, the confidence score of 0.5 coupled with a 'watch' priority warrants escalation for a deeper look into how AMD might be specifically impacted, rather than relying on generic sector analysis."
+  },
+  {
+    "ticker": "NVDA",
+    "headline": "Did Citadel\u2019s $4 Billion AI Stock Selloff Weigh On MU, SNDK, NBIS?",
+    "url": "https://finnhub.io/api/news?id=db33e45db8700a7a0ad75086825d79953df31ab74d702f85ca90f0e2936ea34f",
+    "classification": "Bearish",
+    "confidence": 0.7,
+    "priority": "watch",
+    "escalation_reason": "The headline and summary mention MU, SNDK, and NBIS as potentially affected by Citadel's AI stock sell-off. However, the verdict focuses solely on NVDA, which is only indirectly related to TSM in the ticker context and not mentioned in the news summary. The reasoning does not explain why NVDA is chosen over the stocks explicitly mentioned in the headline or why TSM (the direct ticker context) is ignored."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "Did Citadel\u2019s $4 Billion AI Stock Selloff Weigh On MU, SNDK, NBIS?",
+    "url": "https://finnhub.io/api/news?id=db33e45db8700a7a0ad75086825d79953df31ab74d702f85ca90f0e2936ea34f",
+    "classification": "Bearish",
+    "confidence": 0.6,
+    "priority": "watch",
+    "escalation_reason": "The news is about Citadel selling AI stocks, potentially impacting MU, SNDK, and NBIS. However, the verdict focuses on AAPL and TSMC without explaining the connection or why AAPL is specifically relevant to the news about Citadel's AI stock selloff. The reasoning for AAPL being impacted is vague ('might impact even large-cap tech companies like AAPL') and doesn't directly link to the specified tickers or the nature of the selloff. The confidence is 0.6, but the reasoning is not specific enough to the provided news/context for the \"watch\" priority."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Did Citadel\u2019s $4 Billion AI Stock Selloff Weigh On MU, SNDK, NBIS?",
+    "url": "https://finnhub.io/api/news?id=db33e45db8700a7a0ad75086825d79953df31ab74d702f85ca90f0e2936ea34f",
+    "classification": "Bearish",
+    "confidence": 0.7,
+    "priority": "watch",
+    "escalation_reason": "The reasoning for AMD (indirectly mentioned in ticker_context) is based on a comparison to NVDA, but the news headline specifically mentions MU, SNDK, NBIS. The reasoning does not mention the tickers actually named in the headline, and the verdict itself is for AMD, not the tickers in the headline. This disconnect needs investigation."
   }
 ]
