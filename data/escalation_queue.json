@@ -484,5 +484,113 @@
     "confidence": 0.4,
     "priority": "watch",
     "escalation_reason": "The verdict is for NVDA, but the news is about TSM. The reasoning provided is vague and does not explain how TSM's insider buy directly impacts NVDA. The confidence is low (0.4) and the priority is 'watch', which is a good candidate for escalation."
+  },
+  {
+    "ticker": "NVDA",
+    "headline": "Nvidia: There Is No Plan B",
+    "url": "https://finnhub.io/api/news?id=fba8f1f77c01a624e196e4b357b1335a7b53a3df2b39be1ae58938f84185f18f",
+    "classification": "Bullish",
+    "confidence": 0.8,
+    "priority": "watch",
+    "escalation_reason": "The verdict is 'Bullish' despite the price_trend being 'down' and the chart_read indicating 'short-term bearish pressure'. The reasoning does not adequately explain this divergence or how the 'bullish narrative' overcomes the current negative price action. The expected_price_range also seems to contradict the chart_read by suggesting an immediate upward move."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Nvidia: There Is No Plan B",
+    "url": "https://finnhub.io/api/news?id=fba8f1f77c01a624e196e4b357b1335a7b53a3df2b39be1ae58938f84185f18f",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The original verdict is focused on AMD's indirect relationship to Nvidia and entirely misses the point of the provided news, which is directly about Nvidia. The news headline and summary provide specific details about Nvidia's valuation, growth, and AI focus, which the verdict fails to acknowledge. The reasoning is generic and does not address the core information about NVDA. The classification for AMD is uncertain, but the news is about NVDA and the verdict provides no classification for NVDA."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Nvidia: There Is No Plan B",
+    "url": "https://finnhub.io/api/news?id=fba8f1f77c01a624e196e4b357b1335a7b53a3df2b39be1ae58938f84185f18f",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The verdict is classified as 'Uncertain' and the reasoning discusses TSMC, but the provided news and ticker context are about Nvidia (NVDA). The verdict does not explain why NVDA's news leads to uncertainty regarding TSMC, and the price/volume context for NVDA (down trend, normal volume) is not addressed in the reasoning."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Nvidia: There Is No Plan B",
+    "url": "https://finnhub.io/api/news?id=fba8f1f77c01a624e196e4b357b1335a7b53a3df2b39be1ae58938f84185f18f",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The original classification of 'Uncertain' for NVDA is not supported by the provided news or context. The news headline and summary are about Nvidia's singular focus on AI and its valuation, not about Microsoft's relationship with Nvidia. The provided reasoning for the 'Uncertain' classification heavily focuses on Microsoft (MSFT), which is an indirect ticker, and does not explain how this pertains to Nvidia's outlook. The news itself does not mention Microsoft at all. The confidence is low (0.5) and the priority is 'watch', indicating a need for further review given the mismatch."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "Nvidia: There Is No Plan B",
+    "url": "https://finnhub.io/api/news?id=fba8f1f77c01a624e196e4b357b1335a7b53a3df2b39be1ae58938f84185f18f",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The classification and reasoning provided appear to be for GOOGL, not NVDA. The news headline and summary are clearly about NVDA, and the 'ticker_context' lists NVDA as the direct ticker. The reasoning provided does not reference NVDA at all and instead discusses Google's internal AI chip development, which is irrelevant to the given news about Nvidia. The confidence score of 0.5 further indicates uncertainty, but the core issue is a complete mismatch between the news and the analysis."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Nvidia Next Up",
+    "url": "https://finnhub.io/api/news?id=e2906889cfaae86a98f587d38a8ad30b980f5f00c3a687314435d8251ad09758",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The verdict classification is 'Uncertain' and the reasoning provided is generic and speculative, not specific to the news item. The news item is a simple announcement of an upcoming earnings report for NVDA and does not contain any information that would allow for an assessment of its impact on AMD, especially given the provided reasoning is about potential impacts of NVDA's earnings, not the earnings announcement itself. The low confidence (0.4) combined with a 'watch' priority also warrants escalation for human review to determine if any actual news or price action supports the speculation."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Nvidia Next Up",
+    "url": "https://finnhub.io/api/news?id=e2906889cfaae86a98f587d38a8ad30b980f5f00c3a687314435d8251ad09758",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The verdict focuses on TSMC and the reasoning provided doesn't directly address Nvidia's upcoming earnings report. The news headline and summary are explicitly about Nvidia, and the verdict should reflect that. The confidence level is also low (0.4) for a 'watch' priority item."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Nvidia Next Up",
+    "url": "https://finnhub.io/api/news?id=e2906889cfaae86a98f587d38a8ad30b980f5f00c3a687314435d8251ad09758",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The verdict is focused entirely on MSFT and its potential reaction to NVDA earnings, yet the primary ticker is NVDA. The summary and headline are about NVDA's upcoming earnings. The reasoning should be focused on NVDA's earnings and their likely impact on NVDA stock, not on the potential impact on MSFT. The confidence score is low (0.4) and the priority is 'watch', which warrants escalation due to the mismatch."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "Nvidia Next Up",
+    "url": "https://finnhub.io/api/news?id=e2906889cfaae86a98f587d38a8ad30b980f5f00c3a687314435d8251ad09758",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided for AAPL does not connect to the news item about NVDA's upcoming earnings report. The news is solely about NVDA reporting earnings, not about AI hardware market dynamics. The reasoning seems to be a generic statement about sector sentiment rather than a specific analysis of how Nvidia's earnings report would impact Apple. Furthermore, the confidence level is low (0.3) with a 'watch' priority, indicating a need for escalation to investigate the actual connection or lack thereof."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Tracking Mario Gabelli's Gabelli Funds 13F Portfolio - Q2 2026 Update",
+    "url": "https://finnhub.io/api/news?id=d34e4cb40cc75d54d268277ce81d9c6581998aa1f8ad4091d34324375bc7500b",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The reasoning is vague and generic, failing to connect the news (Mario Gabelli's portfolio update) to the specific ticker (AMD) or the price/volume context. The confidence is low (0.3) while the priority is 'watch', warranting escalation. The news does not mention NVDA or AMD, making the reasoning about indirect impact speculative and unsupported by the provided information."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Tracking Mario Gabelli's Gabelli Funds 13F Portfolio - Q2 2026 Update",
+    "url": "https://finnhub.io/api/news?id=d34e4cb40cc75d54d268277ce81d9c6581998aa1f8ad4091d34324375bc7500b",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The classification is 'Uncertain' with a low confidence (0.3) but the priority is 'watch'. The reasoning discusses potential indirect impacts on TSM via NVDA's holdings, but the original news is about Gabelli Funds' 13F portfolio update. The reasoning should explain why this specific portfolio update, which may or may not involve NVDA, leads to uncertainty for TSM, and how it relates to TSM being a supplier."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Tracking Mario Gabelli's Gabelli Funds 13F Portfolio - Q2 2026 Update",
+    "url": "https://finnhub.io/api/news?id=d34e4cb40cc75d54d268277ce81d9c6581998aa1f8ad4091d34324375bc7500b",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The reasoning is highly speculative and does not directly connect the news to the ticker. The news is about a 13F filing update for Gabelli Funds, which is a routine disclosure of holdings. The reasoning incorrectly extrapolates potential sentiment shifts regarding MSFT based on hypothetical changes in Gabelli's NVDA holdings, without any specific information from the news about those holdings or their impact on MSFT. The confidence level is very low (0.3), while the priority is 'watch', indicating a need for escalation due to low confidence in the reasoning."
   }
 ]
