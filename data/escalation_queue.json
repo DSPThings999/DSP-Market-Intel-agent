@@ -628,5 +628,122 @@
     "confidence": 0.7,
     "priority": "watch",
     "escalation_reason": "The reasoning for AMD (indirectly mentioned in ticker_context) is based on a comparison to NVDA, but the news headline specifically mentions MU, SNDK, NBIS. The reasoning does not mention the tickers actually named in the headline, and the verdict itself is for AMD, not the tickers in the headline. This disconnect needs investigation."
+  },
+  {
+    "ticker": "NVDA",
+    "headline": "NVIDIA (NASDAQ:NVDA) Pairs High Growth Momentum with a Breakout Setup",
+    "url": "https://finnhub.io/api/news?id=e1c60b399ed39a900e0d80fcbc0f1729243c862583550bf3d26340b2b803395f",
+    "classification": "Bullish",
+    "confidence": 0.7,
+    "priority": "urgent",
+    "escalation_reason": "The verdict claims 'Bullish' and 'urgent' priority based on news about \"growth momentum\" and a \"breakout setup,\" but the price context shows a 'down' trend and 'normal' volume. The reasoning acknowledges the price trend is down but then dismisses it, calling the underlying momentum 'positive' based on moving averages which themselves show mixed signals (20-day MA above 50-day MA, but price recently crossed below 20-day MA and is approaching 50-day MA). This conflict between a bullish classification and negative price action, coupled with a somewhat generic technical interpretation, warrants escalation for a deeper dive."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "NVIDIA (NASDAQ:NVDA) Pairs High Growth Momentum with a Breakout Setup",
+    "url": "https://finnhub.io/api/news?id=e1c60b399ed39a900e0d80fcbc0f1729243c862583550bf3d26340b2b803395f",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The classification is 'Uncertain' for AMD, but the reasoning provided only discusses the *potential* indirect impact on AMD from NVDA's news. It doesn't explain why the classification is 'Uncertain' rather than 'Neutral' or something else. The confidence is low (0.4) and the priority is 'watch', which warrants escalation to understand the ambiguity or lack of clear impact."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "NVIDIA (NASDAQ:NVDA) Pairs High Growth Momentum with a Breakout Setup",
+    "url": "https://finnhub.io/api/news?id=e1c60b399ed39a900e0d80fcbc0f1729243c862583550bf3d26340b2b803395f",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The verdict is for TSM, but the reasoning discusses NVDA's performance and its supply chain. The news headline and summary are about NVDA's growth momentum and technical setup, not TSM. There is no direct information in the provided news that links to TSM, making the classification for TSM unsupported and uncertain, and thus needing escalation."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "NVIDIA (NASDAQ:NVDA) Pairs High Growth Momentum with a Breakout Setup",
+    "url": "https://finnhub.io/api/news?id=e1c60b399ed39a900e0d80fcbc0f1729243c862583550bf3d26340b2b803395f",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The original verdict is for NVDA, but the reasoning provided is about MSFT. The reasoning is also generic and does not explain how NVDA's \"high growth momentum\" and \"breakout setup\" specifically impact MSFT, nor does it address the \"down\" price trend for NVDA. Confidence is low (0.4) and priority is \"watch\", which warrants escalation due to the mismatch and lack of specific analysis."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "NVIDIA (NASDAQ:NVDA) Pairs High Growth Momentum with a Breakout Setup",
+    "url": "https://finnhub.io/api/news?id=e1c60b399ed39a900e0d80fcbc0f1729243c862583550bf3d26340b2b803395f",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The classification is 'Uncertain' for GOOGL based on a news item about NVDA. While the reasoning mentions that NVDA's strength in AI is crucial for GOOGL, it also states the news is not directly about GOOGL. The confidence is low (0.4) and the priority is 'watch', which warrants escalation due to the low confidence and indirect relevance. The price/volume context for NVDA (price down, volume normal) is not mentioned in the reasoning for the GOOGL classification. The provided reasoning and risks/opportunities seem to be more directly related to NVDA itself rather than how this specific news affects GOOGL as a competitor/customer."
+  },
+  {
+    "ticker": "NVDA",
+    "headline": "Bessent's Toolbox Gets a Rest as Gold Prints $4,600 and Ross Stores Cleans Up",
+    "url": "https://finnhub.io/api/news?id=7787e77d790c82615e1e824a41688465d5bf2c4d110e7c42c19de2bdd668833b",
+    "classification": "Uncertain",
+    "confidence": 0.6,
+    "priority": "urgent",
+    "escalation_reason": "The priority is 'urgent' but the confidence is only 0.6. The reasoning is somewhat vague in that it states 'no direct information about Nvidia's pre-earnings sentiment or performance' but the headline is \"Bessent's Toolbox Gets a Rest as Gold Prints $4,600 and Ross Stores Cleans Up\", which does not mention Nvidia at all. This headline is likely a clickbait headline and the news summary is largely irrelevant to Nvidia. The original verdict seems to be assuming Nvidia earnings are the primary focus when the headline and summary do not support this. This warrants further investigation."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "Bessent's Toolbox Gets a Rest as Gold Prints $4,600 and Ross Stores Cleans Up",
+    "url": "https://finnhub.io/api/news?id=7787e77d790c82615e1e824a41688465d5bf2c4d110e7c42c19de2bdd668833b",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The reasoning for GOOGL being 'Uncertain' does not connect the provided news headline and summary to the ticker. The news mentions Nvidia earnings as a key event, and the reasoning correctly identifies GOOGL as a competitor and cloud provider dependent on GPUs. However, the news itself is about gold, Ross Stores, and BJ's Wholesale, and doesn't offer any specific information about Nvidia, GOOGL, or the AI ecosystem that would justify an 'Uncertain' classification based on the provided context. The classification is essentially waiting for future news (Nvidia earnings) rather than being derived from the current news item."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "Bessent's Toolbox Gets a Rest as Gold Prints $4,600 and Ross Stores Cleans Up",
+    "url": "https://finnhub.io/api/news?id=7787e77d790c82615e1e824a41688465d5bf2c4d110e7c42c19de2bdd668833b",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The classification is 'Uncertain' with low confidence (0.4) but the priority is 'watch'. The reasoning for AAPL is very generic and doesn't tie the news (which focuses on gold, Ross Stores, and upcoming Nvidia earnings) to AAPL specifically, other than stating AAPL is a 'major technology company' and operates in the 'US market context'. The price/volume context for AAPL is not provided, so it's unclear if there are any price/volume signals that contradict the 'Uncertain' classification or if the classification is truly unsupported. The news itself doesn't provide any specific information related to AAPL."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "CoreWeave: A Financial Accident In The Making",
+    "url": "https://finnhub.io/api/news?id=14c4893a293de51c31c9bf5b654c26c24d36a351390f7301d682b0921f107bd4",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The verdict for AMD is \"Uncertain\" with low confidence (0.4) and \"watch\" priority, but the reasoning provided is generic and doesn't specifically address how CoreWeave's financial situation directly impacts AMD. It speculates on general \"purchasing decisions\" and \"AI chip sales\" without concrete links. The news itself is about CoreWeave's debt, not AMD's product demand or competitive standing. The price trend for NVDA (the direct ticker) is 'down', which isn't discussed in relation to AMD's potential reaction or the CoreWeave news. This low-confidence, low-explanation assessment for a potentially significant financial story warrants escalation."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "CoreWeave: A Financial Accident In The Making",
+    "url": "https://finnhub.io/api/news?id=14c4893a293de51c31c9bf5b654c26c24d36a351390f7301d682b0921f107bd4",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The news is about CoreWeave, a private company, and its debt situation. The verdict focuses entirely on TSMC, which is not directly mentioned in the headline or summary. While TSMC is a manufacturer for AI chips used by companies like CoreWeave, the connection is indirect and speculative. The reasoning does not sufficiently explain how this news impacts TSMC, especially given the low confidence score and 'watch' priority. The price/volume context for NVDA is also not mentioned in the verdict."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "CoreWeave: A Financial Accident In The Making",
+    "url": "https://finnhub.io/api/news?id=14c4893a293de51c31c9bf5b654c26c24d36a351390f7301d682b0921f107bd4",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The classification is 'Uncertain' with a low confidence score (0.4) and a 'watch' priority. The reasoning and identified risks/opportunities are generic and do not specifically tie back to the news headline about CoreWeave's debt and expansion plans, nor do they explain the 'Uncertain' classification. The price/volume context is not addressed at all."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "CoreWeave: A Financial Accident In The Making",
+    "url": "https://finnhub.io/api/news?id=14c4893a293de51c31c9bf5b654c26c24d36a351390f7301d682b0921f107bd4",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided for the 'Uncertain' classification focuses heavily on indirect impacts to GOOGL and MSFT, which are not the primary tickers in the context. The news is directly about CoreWeave, a private company, and its financial situation, which has limited direct relevance to the public, large-cap tech companies listed. The reasoning does not explain how CoreWeave's specific situation (debt vs. capacity growth) affects NVDA or its competitors/suppliers in a way that warrants an 'Uncertain' classification or a 'watch' priority. The low confidence (0.4) further supports the need for escalation."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "CoreWeave: Nvidia Is Quietly Repricing The Neocloud Window",
+    "url": "https://finnhub.io/api/news?id=c07ec4c6fee848b1117a561047563edcd44cf6a33c4773678710c7e441a6c832",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The verdict for MSFT (given its relationship with NVDA) is \"Uncertain\" with a confidence of 0.4 and priority of \"watch\". However, the news headline is about CoreWeave, and the summary explicitly mentions \"CRWV stock\" and a \"Strong Sell\" recommendation for it. The provided reasoning for MSFT does not directly explain why the news about CoreWeave's repricing is relevant to MSFT, other than MSFT being a \"major cloud provider\" and \"significant customer of AI hardware\". The reasoning is too generic and doesn't connect the specific event (CoreWeave repricing) to MSFT in a concrete way. Furthermore, the summary explicitly states \"CoreWeave remains a Strong Sell\", which is a bearish signal for CoreWeave, but the verdict for MSFT is \"Uncertain\", without explaining if this impacts MSFT positively or negatively. The connection between CoreWeave's news and MSFT's potential impact is not clearly articulated or supported by the provided information."
   }
 ]
