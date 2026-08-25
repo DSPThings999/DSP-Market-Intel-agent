@@ -889,5 +889,23 @@
     "confidence": 0.5,
     "priority": "watch",
     "escalation_reason": "The verdict claims MSFT is a 'consumer of AI hardware' and indirectly positioned to benefit, but the provided news headline focuses on the market being cheap and mentions NVDA, GOOGL, and MU as AI hardware picks. The reasoning does not clearly connect MSFT to the specific arguments or examples in the news. Furthermore, the confidence is low (0.5) and the priority is 'watch', which warrants escalation given the weak justification."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Which S&P500 stocks are the most active on Tuesday?",
+    "url": "https://finnhub.io/api/news?id=a9251f9283b5230d33a2e52ed6096324c868b9a20066ede8525d714353dc782a",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided for classification is vague and does not adequately connect the news headline about 'most active S&P500 stocks' to the specific ticker (NVDA/AMD) or the price/volume context. The news is a generic listicle and doesn't provide specific catalysts. The low confidence (0.3) combined with a 'watch' priority warrants escalation for further investigation before alerting."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Which S&P500 stocks are the most active on Tuesday?",
+    "url": "https://finnhub.io/api/news?id=a9251f9283b5230d33a2e52ed6096324c868b9a20066ede8525d714353dc782a",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The reasoning for \"Uncertain\" classification is vague and does not connect to the provided news headline, which is a general inquiry about \"most active S&P500 stocks\". The verdict focuses on MSFT's relationship with NVDA, which is not mentioned in the news. The low confidence (0.3) coupled with a \"watch\" priority warrants escalation for a more specific analysis tied to the news."
   }
 ]
