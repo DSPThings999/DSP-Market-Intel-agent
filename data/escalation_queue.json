@@ -745,5 +745,149 @@
     "confidence": 0.4,
     "priority": "watch",
     "escalation_reason": "The verdict for MSFT (given its relationship with NVDA) is \"Uncertain\" with a confidence of 0.4 and priority of \"watch\". However, the news headline is about CoreWeave, and the summary explicitly mentions \"CRWV stock\" and a \"Strong Sell\" recommendation for it. The provided reasoning for MSFT does not directly explain why the news about CoreWeave's repricing is relevant to MSFT, other than MSFT being a \"major cloud provider\" and \"significant customer of AI hardware\". The reasoning is too generic and doesn't connect the specific event (CoreWeave repricing) to MSFT in a concrete way. Furthermore, the summary explicitly states \"CoreWeave remains a Strong Sell\", which is a bearish signal for CoreWeave, but the verdict for MSFT is \"Uncertain\", without explaining if this impacts MSFT positively or negatively. The connection between CoreWeave's news and MSFT's potential impact is not clearly articulated or supported by the provided information."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Marvell: The AI Inflection Has Arrived, But The Stock Has Run Ahead (Rating Downgrade)",
+    "url": "https://finnhub.io/api/news?id=b79b5a302e89eb720873a11871229e2f0eddf4a13f019bd80f74fe4a1b7d1d34",
+    "classification": "Uncertain",
+    "confidence": 0.55,
+    "priority": "watch",
+    "escalation_reason": "The classification is for AMD, but the news headline and summary are about Marvell. The reasoning discusses AMD's position relative to Marvell and NVDA in the AI chip market, but doesn't explain how the Marvell-specific news directly impacts AMD. The price context for MRVL is missing, and the analysis doesn't connect the provided MRVL news to the specified price trend for AMD. Confidence is low (0.55) with a 'watch' priority, indicating a need for deeper review."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Marvell: The AI Inflection Has Arrived, But The Stock Has Run Ahead (Rating Downgrade)",
+    "url": "https://finnhub.io/api/news?id=b79b5a302e89eb720873a11871229e2f0eddf4a13f019bd80f74fe4a1b7d1d34",
+    "classification": "Uncertain",
+    "confidence": 0.6,
+    "priority": "watch",
+    "escalation_reason": "The provided news is about Marvell (MRVL), not TSMC (TSM), yet the verdict is solely focused on TSMC. The reasoning and risks/opportunities are irrelevant to the actual news headline and summary provided. The classification should be for MRVL, and the reasoning needs to reflect the Marvell-specific news and price action."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Marvell: The AI Inflection Has Arrived, But The Stock Has Run Ahead (Rating Downgrade)",
+    "url": "https://finnhub.io/api/news?id=b79b5a302e89eb720873a11871229e2f0eddf4a13f019bd80f74fe4a1b7d1d34",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The verdict is for ticker MSFT, but the news is about Marvell (MRVL). The reasoning and risks/opportunities provided for MSFT are generic and do not directly address the headline about Marvell's rating downgrade. The analysis does not connect Marvell's situation to MSFT in a meaningful way, and the confidence level is low."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "Marvell: The AI Inflection Has Arrived, But The Stock Has Run Ahead (Rating Downgrade)",
+    "url": "https://finnhub.io/api/news?id=b79b5a302e89eb720873a11871229e2f0eddf4a13f019bd80f74fe4a1b7d1d34",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The verdict is \"Uncertain\" with low confidence (0.5) and \"watch\" priority, which warrants escalation as per guidelines. The reasoning is generic and doesn't directly connect the Marvell news to GOOGL's specific situation beyond stating GOOGL is a consumer of AI hardware. While the headline mentions Marvell's rating downgrade and the stock running ahead, the verdict for GOOGL doesn't address any potential impact of this specific event (e.g., supplier changes, cost implications due to Marvell's valuation, or impact on competitors like NVDA)."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "Marvell: The AI Inflection Has Arrived, But The Stock Has Run Ahead (Rating Downgrade)",
+    "url": "https://finnhub.io/api/news?id=b79b5a302e89eb720873a11871229e2f0eddf4a13f019bd80f74fe4a1b7d1d34",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The provided verdict for AAPL is nonsensical. The news is about Marvell (MRVL), not Apple (AAPL). The reasoning discusses Apple's internal AI investment, which is irrelevant to the Marvell news. Furthermore, the ticker context shows that AAPL is only related to NVDA at a country level, not as a direct or indirect peer in the AI infrastructure space. The confidence is low (0.4) and the priority is 'watch', making this a prime candidate for escalation."
+  },
+  {
+    "ticker": "NVDA",
+    "headline": "JEPQ: There's Never Been A Better Time To Buy This ETF",
+    "url": "https://finnhub.io/api/news?id=15251ddaea213d3f888a9d0a33631e9ad615a0c37ab7141fe27766a0c565f0b8",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The classification is 'Uncertain' but the reasoning provided is vague and does not clearly articulate why the decision is uncertain, beyond stating the news is not directly about NVDA. The analysis mentions mixed signals from the chart (downward price trend vs. upward MAs) but doesn't resolve this uncertainty or explain why the ETF news is relevant to NVDA beyond a general sector connection. The confidence is low (0.5) and the priority is 'watch', which warrants escalation. The provided expected price range also seems to be derived without a strong justification given the stated uncertainty."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "JEPQ: There's Never Been A Better Time To Buy This ETF",
+    "url": "https://finnhub.io/api/news?id=15251ddaea213d3f888a9d0a33631e9ad615a0c37ab7141fe27766a0c565f0b8",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided for AMD is vague and does not clearly connect to the news headline about the JEPQ ETF, which is an ETF focused on covered calls and income generation, not directly on AI chip performance. The classification of 'Uncertain' seems to be a default based on a tangential relationship rather than a clear interpretation of the news's impact on the ticker. The confidence score is low (0.4) and the priority is 'watch', which warrants escalation."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "JEPQ: There's Never Been A Better Time To Buy This ETF",
+    "url": "https://finnhub.io/api/news?id=15251ddaea213d3f888a9d0a33631e9ad615a0c37ab7141fe27766a0c565f0b8",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The verdict is classified as 'Uncertain' for TSM, but the provided reasoning and risks/opportunities do not directly address TSM's specific situation or performance, instead focusing broadly on AI tech risks and the ETF's strategy. The confidence is low (0.4) while the priority is 'watch', which warrants escalation for a deeper look."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "JEPQ: There's Never Been A Better Time To Buy This ETF",
+    "url": "https://finnhub.io/api/news?id=15251ddaea213d3f888a9d0a33631e9ad615a0c37ab7141fe27766a0c565f0b8",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The original verdict claims \"Uncertain\" classification for MSFT based on news about an ETF (JEPQ) that yields from covered calls to cushion AI tech risks. The reasoning provided is vague and generic, stating MSFT is a competitor in AI and a cloud provider, and that the news is relevant to the sector MSFT operates in. However, it fails to connect the specific news about the JEPQ ETF's strategy or its yield to any direct impact or relevance for MSFT, especially given MSFT's strong position in AI and cloud services. The confidence level is low (0.4) and the priority is \"watch\", which warrants escalation due to the unsupported classification for a major ticker like MSFT. The news is primarily about an ETF and its strategy, not directly about MSFT's performance or future prospects, making the classification of \"Uncertain\" on MSFT tenuous without a much clearer link."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "JEPQ: There's Never Been A Better Time To Buy This ETF",
+    "url": "https://finnhub.io/api/news?id=15251ddaea213d3f888a9d0a33631e9ad615a0c37ab7141fe27766a0c565f0b8",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The classification and reasoning are focused on GOOGL, but the news item is about an ETF (JEPQ) that uses covered calls to hedge against AI tech risks. The reasoning does not connect the ETF's strategy or its mention of AI tech risks directly to GOOGL in a meaningful way. The confidence is also low (0.4) while the priority is 'watch', suggesting a need for further review."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "JEPQ: There's Never Been A Better Time To Buy This ETF",
+    "url": "https://finnhub.io/api/news?id=15251ddaea213d3f888a9d0a33631e9ad615a0c37ab7141fe27766a0c565f0b8",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The \"Uncertain\" classification and low confidence (0.3) are appropriate given the indirect relationship. However, the reasoning fails to mention the direct mention of \"JEPQ ETF\" and its strategy for cushioning investors against AI tech risks, which is the core of the article. The risks and opportunities listed are also generic and do not specifically tie back to the ETF's stated strategy of using covered calls for yield in volatile AI markets."
+  },
+  {
+    "ticker": "NVDA",
+    "headline": "The Market Is Cheap: The AI Revolution Has Created Plenty Of Bargains",
+    "url": "https://finnhub.io/api/news?id=99a8808d41a6c8c81c40512923000a5bd8120961867eefbbcb9e291f66fe8da2",
+    "classification": "Bullish",
+    "confidence": 0.7,
+    "priority": "watch",
+    "escalation_reason": "The \"reasoning\" claims the chart shows a recent upward trend after a period of decline and the price moving above the 50-day moving average. However, the \"chart_read\" states the price is currently below the 20-day MA but above the 50-day MA, indicating a mixed short-term trend, and the \"price_trend\" context is \"down\". The reasoning does not reconcile these contradictions, nor does it explain why the bullish classification is appropriate given the negative price trend and mixed chart signals."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "The Market Is Cheap: The AI Revolution Has Created Plenty Of Bargains",
+    "url": "https://finnhub.io/api/news?id=99a8808d41a6c8c81c40512923000a5bd8120961867eefbbcb9e291f66fe8da2",
+    "classification": "Bullish",
+    "confidence": 0.6,
+    "priority": "watch",
+    "escalation_reason": "The verdict is classified as 'Bullish' for GOOGL based on it being an AI hardware pick and benefiting from the AI revolution. However, the provided price/volume context shows a 'down' price trend and 'normal' volume, which contradicts a simple bullish outlook without further explanation. The reasoning is also generic, applying a sector-wide outlook without specific justification for GOOGL's current price action or why it would be bullish despite the down trend. The confidence is moderate (0.6), but the contradiction between the bullish classification and the downward price trend warrants escalation."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "The Market Is Cheap: The AI Revolution Has Created Plenty Of Bargains",
+    "url": "https://finnhub.io/api/news?id=99a8808d41a6c8c81c40512923000a5bd8120961867eefbbcb9e291f66fe8da2",
+    "classification": "Bullish",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The reasoning for AMD being 'Bullish' is extremely generic and does not connect directly to the specific news or AMD's role beyond a vague mention of AI hardware. The article's direct AI hardware picks are NVDA, GOOGL, and MU, with AMD only mentioned as a competitor. The low confidence (0.5) combined with the 'watch' priority, and the fact that the price trend for the market is 'down' while the article claims 'the market is cheap', warrants escalation for deeper research."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "The Market Is Cheap: The AI Revolution Has Created Plenty Of Bargains",
+    "url": "https://finnhub.io/api/news?id=99a8808d41a6c8c81c40512923000a5bd8120961867eefbbcb9e291f66fe8da2",
+    "classification": "Bullish",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The reasoning for TSM being bullish is not supported by the news headline, which focuses on broad market valuations and AI hardware picks like NVDA and GOOGL. The summary mentions NVDA, GOOGL, and MU, but TSM is not mentioned. While TSM is a key semiconductor manufacturer, the article does not provide specific information linking TSM to increased orders or revenue from the AI revolution, making the bullish classification speculative and unsupported by the provided text. Additionally, the confidence is low (0.5) while the priority is 'watch'."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "The Market Is Cheap: The AI Revolution Has Created Plenty Of Bargains",
+    "url": "https://finnhub.io/api/news?id=99a8808d41a6c8c81c40512923000a5bd8120961867eefbbcb9e291f66fe8da2",
+    "classification": "Bullish",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The verdict claims MSFT is a 'consumer of AI hardware' and indirectly positioned to benefit, but the provided news headline focuses on the market being cheap and mentions NVDA, GOOGL, and MU as AI hardware picks. The reasoning does not clearly connect MSFT to the specific arguments or examples in the news. Furthermore, the confidence is low (0.5) and the priority is 'watch', which warrants escalation given the weak justification."
   }
 ]
