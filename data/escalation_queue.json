@@ -907,5 +907,104 @@
     "confidence": 0.3,
     "priority": "watch",
     "escalation_reason": "The reasoning for \"Uncertain\" classification is vague and does not connect to the provided news headline, which is a general inquiry about \"most active S&P500 stocks\". The verdict focuses on MSFT's relationship with NVDA, which is not mentioned in the news. The low confidence (0.3) coupled with a \"watch\" priority warrants escalation for a more specific analysis tied to the news."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Cheaper Oil and a Chip Bid Set the Table Before Nvidia Speaks",
+    "url": "https://finnhub.io/api/news?id=bdd5ff242d5acf57f02c5b23519220e818af944279b3c1f3f5ab65b2e2fffb55",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided for AMD is generic and does not specifically address how the news headline/summary relates to AMD. The headline is about Nvidia's upcoming earnings and broader market movements, not directly about AMD. The verdict claims AMD's performance will be influenced by Nvidia's report and commentary, but this is assumed and not substantiated by the provided text."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Cheaper Oil and a Chip Bid Set the Table Before Nvidia Speaks",
+    "url": "https://finnhub.io/api/news?id=bdd5ff242d5acf57f02c5b23519220e818af944279b3c1f3f5ab65b2e2fffb55",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The verdict for TSMC is based on a speculative link to Nvidia's earnings and the broader semiconductor market, which is already stated as uncertain in the reasoning. The low confidence (0.4) combined with a 'watch' priority warrants escalation for a more concrete analysis before alerting."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Cheaper Oil and a Chip Bid Set the Table Before Nvidia Speaks",
+    "url": "https://finnhub.io/api/news?id=bdd5ff242d5acf57f02c5b23519220e818af944279b3c1f3f5ab65b2e2fffb55",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The original verdict is for ticker MSFT, but the news headline and summary are primarily focused on NVDA (Nvidia) earnings. The reasoning provided for MSFT is very generic and doesn't connect specific details from the news about NVDA to MSFT. The price/volume context provided is for MSFT, but the news is about NVDA. This mismatch needs investigation."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "Cheaper Oil and a Chip Bid Set the Table Before Nvidia Speaks",
+    "url": "https://finnhub.io/api/news?id=bdd5ff242d5acf57f02c5b23519220e818af944279b3c1f3f5ab65b2e2fffb55",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided is extremely generic and does not specifically address how the news impacts Google (GOOGL). It mentions Nvidia's earnings and AI hardware trends, but fails to connect these directly to Google's specific business or its relationship with Nvidia. The reasoning also seems to mix general market sentiment with specific company news without clear differentiation. The confidence score is low (0.4) and the priority is 'watch', which aligns with the need for escalation due to the lack of specific, actionable reasoning connecting the news to the ticker."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "Cheaper Oil and a Chip Bid Set the Table Before Nvidia Speaks",
+    "url": "https://finnhub.io/api/news?id=bdd5ff242d5acf57f02c5b23519220e818af944279b3c1f3f5ab65b2e2fffb55",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The provided verdict is 'Uncertain' with low confidence (0.3) and a 'watch' priority, but the reasoning does not specifically tie back to the 'NVDA' ticker's upcoming earnings. The reasoning mentions Apple's AI hardware and broader market sentiment but does not explain how these factors relate to NVDA or why the outlook for NVDA itself is uncertain. The price/volume context for NVDA is not provided, making it impossible to confirm or deny the verdict's assessment, and the reasoning does not justify the low confidence regarding NVDA."
+  },
+  {
+    "ticker": "DKS",
+    "headline": "Cheaper Oil and a Chip Bid Set the Table Before Nvidia Speaks",
+    "url": "https://finnhub.io/api/news?id=bdd5ff242d5acf57f02c5b23519220e818af944279b3c1f3f5ab65b2e2fffb55",
+    "classification": "Bearish",
+    "confidence": 0.7,
+    "priority": "urgent",
+    "escalation_reason": "The verdict is classification 'Bearish' for NVDA, but the reasoning provided discusses Dick's Sporting Goods (DKS) and its guidance cut, which is not directly related to NVDA. The news headline also mentions Nvidia ahead of its earnings, but the reasoning does not address this specific event or its potential impact on NVDA. The price context for NVDA is 'down', which aligns with a bearish classification, but the reasoning does not connect this to any specific news about NVDA or its earnings outlook."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Markets Look Out For Warsh's Jackson Hole Speech, Nvidia Earnings",
+    "url": "https://finnhub.io/api/news?id=8552f760fa590f924bb521d88400a9689c2c2a7bf5bc3fc6aa6993d770f15ac7",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The reasoning and classification are focused on AMD, but the news headline is about Nvidia earnings and a Fed speech. The reasoning does not connect to the core news item."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Markets Look Out For Warsh's Jackson Hole Speech, Nvidia Earnings",
+    "url": "https://finnhub.io/api/news?id=8552f760fa590f924bb521d88400a9689c2c2a7bf5bc3fc6aa6993d770f15ac7",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The confidence is low (0.4) and the priority is 'watch', but the reasoning provided is generic and does not specifically connect the news headline about Nvidia's earnings or the price/volume context to the 'Uncertain' classification. The reasoning focuses on TSMC and broader macroeconomic factors without explaining how these specifically lead to uncertainty for Nvidia or the market, especially given Nvidia is mentioned as a key event in the headline."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Markets Look Out For Warsh's Jackson Hole Speech, Nvidia Earnings",
+    "url": "https://finnhub.io/api/news?id=8552f760fa590f924bb521d88400a9689c2c2a7bf5bc3fc6aa6993d770f15ac7",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The reasoning mentions Microsoft, which is an indirect ticker related to NVDA, but the news headline and summary are solely focused on NVDA earnings and a Fed speech. The reasoning does not directly connect to the specific news about Nvidia's earnings or the Fed speech, making it vague and unsupported. The confidence is also low (0.3) and the priority is 'watch', warranting escalation."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "Markets Look Out For Warsh's Jackson Hole Speech, Nvidia Earnings",
+    "url": "https://finnhub.io/api/news?id=8552f760fa590f924bb521d88400a9689c2c2a7bf5bc3fc6aa6993d770f15ac7",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The reasoning is vague and does not specifically connect the news headline or summary to the ticker. The headline mentions Nvidia earnings but the reasoning focuses on Google. The confidence is low (0.3) and the priority is 'watch', indicating a need for escalation due to potential uncertainty being missed."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "Markets Look Out For Warsh's Jackson Hole Speech, Nvidia Earnings",
+    "url": "https://finnhub.io/api/news?id=8552f760fa590f924bb521d88400a9689c2c2a7bf5bc3fc6aa6993d770f15ac7",
+    "classification": "Uncertain",
+    "confidence": 0.2,
+    "priority": "watch",
+    "escalation_reason": "The reasoning for AAPL is vague and does not directly connect to the news which highlights Nvidia earnings and a Fed speech. The reasoning also mentions Apple's influence from broader market sentiment and tech sector performance, which is generic. The confidence level is very low (0.2) but the priority is 'watch'. The verdict should be more specific to the news provided."
   }
 ]
