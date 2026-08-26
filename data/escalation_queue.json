@@ -1024,5 +1024,14 @@
     "confidence": 0.3,
     "priority": "watch",
     "escalation_reason": "The classification is 'Uncertain' with low confidence (0.3), but the priority is 'watch'. The reasoning for the uncertainty is valid, stating the indirect impact on AAPL. However, the verdict itself could be considered actively wrong or at least misleading given the extremely tenuous connection and low confidence. The news is specifically about ServiceNow, not Apple, and the reasoning correctly points this out. The 'opportunities' section tries to find a silver lining but it's a stretch given the context."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Explore the S&P500 index on Wednesday and find out which stocks are the most active in today's session.",
+    "url": "https://finnhub.io/api/news?id=c710f4da94ba6b1816de5555e8b2151446aae51f52ce20fa254d5a2921bdc8fd",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The news is a generic market overview and does not provide specific information about any ticker. The verdict attempts to infer impact on AMD based on its relationship to NVDA and NVDA's price trend, but this is speculative given the lack of direct news for AMD. The reasoning is vague and relies on a general market observation rather than concrete news impacting AMD."
   }
 ]
