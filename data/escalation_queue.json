@@ -1006,5 +1006,23 @@
     "confidence": 0.2,
     "priority": "watch",
     "escalation_reason": "The reasoning for AAPL is vague and does not directly connect to the news which highlights Nvidia earnings and a Fed speech. The reasoning also mentions Apple's influence from broader market sentiment and tech sector performance, which is generic. The confidence level is very low (0.2) but the priority is 'watch'. The verdict should be more specific to the news provided."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "ServiceNow: A Loaded Rocket On The AI Launch Pad",
+    "url": "https://finnhub.io/api/news?id=5eac96abe82e07445f5d5db40ddc111e36f81a4f9bd3220e3a1e9f430d28b608",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The original verdict classified the news as 'Uncertain' for AMD with low confidence (0.4) and 'watch' priority, but the reasoning does not explain why the news is relevant to AMD at all, especially given the headline is about ServiceNow. The indirect connection to AI market growth is too tenuous to justify a 'watch' priority without further explanation or data that links ServiceNow's success directly to AMD's business prospects. The verdict fails to adequately connect the ServiceNow AI revenue news to AMD's specific situation."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "ServiceNow: A Loaded Rocket On The AI Launch Pad",
+    "url": "https://finnhub.io/api/news?id=5eac96abe82e07445f5d5db40ddc111e36f81a4f9bd3220e3a1e9f430d28b608",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The classification is 'Uncertain' with low confidence (0.3), but the priority is 'watch'. The reasoning for the uncertainty is valid, stating the indirect impact on AAPL. However, the verdict itself could be considered actively wrong or at least misleading given the extremely tenuous connection and low confidence. The news is specifically about ServiceNow, not Apple, and the reasoning correctly points this out. The 'opportunities' section tries to find a silver lining but it's a stretch given the context."
   }
 ]
