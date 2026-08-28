@@ -1042,5 +1042,113 @@
     "confidence": 0.5,
     "priority": "watch",
     "escalation_reason": "The verdict is for GOOGL, but the reasoning provided focuses entirely on NVDA's performance and its implications for GOOGL as a customer and competitor. The verdict doesn't explain why GOOGL's classification is 'Uncertain' based on NVDA's earnings, nor does it correlate with any specific price/volume action for GOOGL. The reasoning about competition is generic and not tied to the specifics of the NVDA news or GOOGL's actual situation post-NVDA earnings."
+  },
+  {
+    "ticker": "NVDA",
+    "headline": "What's going on in today's session: S&P500 movers",
+    "url": "https://finnhub.io/api/news?id=f563c106233d14ebb69586ee907707f00b570373de8f8e44db8bfd287e5b4889",
+    "classification": "Bullish",
+    "confidence": 0.8,
+    "priority": "urgent",
+    "escalation_reason": "The news headline is generic and doesn't specify if NVDA is a mover. The reasoning provided by the original verdict seems to be based on general chart patterns and volume analysis attributed to NVDA, rather than specific information from the news item. The news itself does not mention NVDA at all, and the reasoning does not explain how the generic S&P500 movers news translates to a bullish outlook specifically for NVDA. This disconnect requires escalation."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "What's going on in today's session: S&P500 movers",
+    "url": "https://finnhub.io/api/news?id=f563c106233d14ebb69586ee907707f00b570373de8f8e44db8bfd287e5b4889",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The news is a general S&P500 movers headline without any specific details about NVDA or AMD. The verdict classifies it as 'Uncertain' for AMD but gives a confidence of 0.5 and priority 'watch', which is appropriate for the vague news. However, the reasoning provided for AMD's uncertainty directly references NVDA's performance as a factor, despite the news not mentioning NVDA at all. The reasoning for the classification is therefore detached from the provided news summary."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "What's going on in today's session: S&P500 movers",
+    "url": "https://finnhub.io/api/news?id=f563c106233d14ebb69586ee907707f00b570373de8f8e44db8bfd287e5b4889",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The news headline and summary are extremely generic and do not provide any specific information about any S&P500 movers, particularly NVDA or TSM. The provided verdict for TSM seems to infer information about NVDA's potential impact on TSM that is not supported by the given news. The low confidence (0.4) coupled with a 'watch' priority warrants escalation due to the lack of concrete news driving the classification."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "What's going on in today's session: S&P500 movers",
+    "url": "https://finnhub.io/api/news?id=f563c106233d14ebb69586ee907707f00b570373de8f8e44db8bfd287e5b4889",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The news headline is extremely generic and discusses S&P500 movers broadly, yet the verdict focuses specifically on MSFT and its relation to NVDA. The reasoning provided for MSFT is speculative and doesn't connect to any specific information within the provided news headline or summary. Furthermore, the confidence level is low (0.5) while the priority is 'watch', indicating a need for further investigation into how this general market news relates to specific tickers like MSFT."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "What's going on in today's session: S&P500 movers",
+    "url": "https://finnhub.io/api/news?id=f563c106233d14ebb69586ee907707f00b570373de8f8e44db8bfd287e5b4889",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The provided news is a generic S&P500 movers headline and does not contain specific information about NVDA. The verdict for NVDA appears to be derived from external knowledge about the AI chip market and its competitors (GOOGL, MSFT, AMD, TSM), rather than the news item itself. The reasoning mentions GOOGL and MSFT's role as chip consumers and AI competitors, but this is not directly supported by the news content. Furthermore, the confidence is low (0.5) and the priority is 'watch', which, when combined with a lack of direct news support for the specific ticker, warrants escalation."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "What's going on in today's session: S&P500 movers",
+    "url": "https://finnhub.io/api/news?id=f563c106233d14ebb69586ee907707f00b570373de8f8e44db8bfd287e5b4889",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The news headline is generic ('S&P500 movers') and the summary does not provide any specific information about NVDA or other mentioned tickers. The verdict's reasoning discusses AAPL in relation to NVDA, but the news itself does not mention AAPL. The confidence score is low (0.3) and the priority is 'watch', which, combined with the lack of specific news and a potentially irrelevant reasoning, warrants escalation."
+  },
+  {
+    "ticker": "NVDA",
+    "headline": "Marvell Q2: Not Good Enough",
+    "url": "https://finnhub.io/api/news?id=0e41ce09491882242356dc16f075d68cbafb302a6ea2fe9bc854f67b1f464e0b",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "low",
+    "escalation_reason": "The provided reasoning is vague and does not connect the Marvell news to NVDA. It states Marvell is a competitor but then hedges by saying NVDA's specific performance may mitigate the impact, without any evidence or further analysis. The price/volume context for NVDA is missing entirely, making it impossible to assess the relevance of the Marvell news. The low confidence (0.5) combined with the 'low' priority doesn't align with the potential sector-wide implications mentioned, suggesting the need for further investigation before a classification can be confirmed."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Marvell Q2: Not Good Enough",
+    "url": "https://finnhub.io/api/news?id=0e41ce09491882242356dc16f075d68cbafb302a6ea2fe9bc854f67b1f464e0b",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "low",
+    "escalation_reason": "The reasoning and classification for AMD are too generic and do not specifically address how Marvell's Q2 results (revenue growth, valuation, dilution) might impact AMD. The news is about Marvell, but the verdict discusses AMD as if it's the primary subject, and the connection is weakly stated as 'could be indirectly affected' and 'may shift'. The confidence is low (0.5) and the priority is low, but the reasoning is vague and unsupported by specific analysis linking Marvell's situation to AMD."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Marvell Q2: Not Good Enough",
+    "url": "https://finnhub.io/api/news?id=0e41ce09491882242356dc16f075d68cbafb302a6ea2fe9bc854f67b1f464e0b",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "low",
+    "escalation_reason": "The reasoning provided focuses on TSMC, which is not directly mentioned in the news headline or summary. The news is about Marvell, and the reasoning should be directly tied to Marvell's performance and the stated comparison to AI chip peers. The confidence is low (0.4) and the priority is low, but the disconnect between the news and the reasoning warrants escalation."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Marvell Q2: Not Good Enough",
+    "url": "https://finnhub.io/api/news?id=0e41ce09491882242356dc16f075d68cbafb302a6ea2fe9bc854f67b1f464e0b",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "low",
+    "escalation_reason": "The verdict reasoning is vague and does not connect the specific news about Marvell (MRVL) to the broader AI chip market or the specified ticker (NVDA). It mentions Microsoft as a customer but doesn't explain how Marvell's performance (revenue growth, valuation, dilution) specifically impacts NVDA or the AI chip market in a way that justifies the \"Uncertain\" classification. The low confidence (0.4) combined with the indirect reasoning warrants further investigation before confirming the verdict."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "Marvell Q2: Not Good Enough",
+    "url": "https://finnhub.io/api/news?id=0e41ce09491882242356dc16f075d68cbafb302a6ea2fe9bc854f67b1f464e0b",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "low",
+    "escalation_reason": "The reasoning is vague and does not connect Marvell's news to Google specifically. The news about Marvell's Q2 performance and valuation (rich vs AI chip peers) is not directly applicable to Google (MSFT, GOOGL, AAPL were listed as indirect context related to NVDA, not Marvell). The reasoning uses Marvell's news as a proxy for general AI chip market concerns but fails to establish a clear link or impact on Google's business, especially given Marvell's specific performance metrics are not detailed beyond 'revenue growth' and the headline 'Not Good Enough'."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "These stocks are the most active in today's session",
+    "url": "https://finnhub.io/api/news?id=391b1ea8b9684cb0627f32220a0f54c496de9b29a8a76774493d2178d40af9f6",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The reasoning for TSM's classification is vague and does not directly address the provided news headline which is about 'most active stocks'. The reasoning speculates about indirect benefits to TSM based on NVDA's activity, but the news itself does not mention NVDA or provide any specific information about chip orders or TSM's order book. The low confidence (0.4) combined with a 'watch' priority further supports the need for escalation."
   }
 ]
