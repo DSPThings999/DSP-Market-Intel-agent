@@ -1330,5 +1330,68 @@
     "confidence": 0.3,
     "priority": "watch",
     "escalation_reason": "The news is a generic market update about Dow Jones stocks and does not contain any specific information about NVDA, the only ticker mentioned in the direct context. The reasoning provided for MSFT is also speculative and not directly supported by the news content. The low confidence (0.3) combined with a 'watch' priority warrants escalation due to the lack of concrete information linking the news to the ticker's potential movement."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "US to Tell G20: Regulate AI Less, Buy American Chips as Nvidia's Jensen Huang Joins Talks",
+    "url": "https://finnhub.io/api/news?id=2d0eef0e462099f2dfe0a9f35992668adeede5c322453bbae332728dd807f0de",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The reasoning focuses heavily on TSMC, which is an indirect ticker. The news explicitly mentions Nvidia (NVDA) and the US policy of 'Buy American Chips'. The verdict claims uncertainty due to potential negative impacts on TSMC from the 'Buy American Chips' policy, but fails to analyze the direct impact on NVDA, which is the company explicitly named in the headline and relevant to the policy. The reasoning should prioritize the impact on NVDA and then address indirect effects on others like TSMC."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "US to Tell G20: Regulate AI Less, Buy American Chips as Nvidia's Jensen Huang Joins Talks",
+    "url": "https://finnhub.io/api/news?id=2d0eef0e462099f2dfe0a9f35992668adeede5c322453bbae332728dd807f0de",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The provided verdict incorrectly focuses on Microsoft (MSFT) as the primary beneficiary/affected party, despite the news explicitly mentioning Nvidia (NVDA) and the Trump administration's stance on AI regulation and chip manufacturing. The reasoning does not connect back to the ticker context provided (NVDA) nor the core news event accurately. Confidence is low (0.5) and priority is 'watch', indicating a need for deeper review to confirm the correct tickers and rationale."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "US to Tell G20: Regulate AI Less, Buy American Chips as Nvidia's Jensen Huang Joins Talks",
+    "url": "https://finnhub.io/api/news?id=2d0eef0e462099f2dfe0a9f35992668adeede5c322453bbae332728dd807f0de",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The reasoning is generic and applies to many AI companies, not specifically Google (GOOGL). The verdict claims 'Uncertain' due to mixed signals but then focuses heavily on potential benefits for Google's AI and cloud business, which isn't adequately supported by the news which focuses on NVDA and US policy. The confidence level is low (0.5) and the priority is 'watch', which warrants escalation."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "US to Tell G20: Regulate AI Less, Buy American Chips as Nvidia's Jensen Huang Joins Talks",
+    "url": "https://finnhub.io/api/news?id=2d0eef0e462099f2dfe0a9f35992668adeede5c322453bbae332728dd807f0de",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The verdict for AAPL is uncertain and claims the \"Buy American Chips\" directive might not directly impact Apple's supply chain in the short term. However, the news explicitly mentions \"Buy American Chips\" and AAPL is a major US chip designer. The reasoning seems to disregard the direct relevance and does not explain why the impact would be uncertain or negligible. The low confidence (0.4) combined with the \"watch\" priority warrants escalation."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Top Tech Analyst Warns: OpenAI\u2019s Ad Business Grew 10x in 6 Months. Google Search Is the Most Exposed",
+    "url": "https://finnhub.io/api/news?id=003c50f8a6d78ff34e00dafd525ce3b893d4bef6c4dfd0299cae9002d12f5aa0",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The original verdict for AMD is classified as 'Uncertain' with a confidence of 0.5, but the priority is 'watch'. This low confidence combined with a high-priority rating warrants escalation. The reasoning provided is generic and doesn't directly address how AMD's competitive position or supply chain role would be significantly impacted by OpenAI's ad business growth versus Google Search. It speculates on potential benefits if AI hardware demand increases across the board, but doesn't analyze the specific competitive threat to Google or how that might affect AMD's relationship with either OpenAI or Google."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Top Tech Analyst Warns: OpenAI\u2019s Ad Business Grew 10x in 6 Months. Google Search Is the Most Exposed",
+    "url": "https://finnhub.io/api/news?id=003c50f8a6d78ff34e00dafd525ce3b893d4bef6c4dfd0299cae9002d12f5aa0",
+    "classification": "Uncertain",
+    "confidence": 0.5,
+    "priority": "watch",
+    "escalation_reason": "The reasoning provided for TSM is generic and does not specifically connect the OpenAI/Google conflict to TSM's business beyond a vague mention of 'AI chips.' The verdict is 'Uncertain' with low confidence (0.5), but the priority is 'watch,' indicating a need for deeper analysis to confirm or deny the asserted indirect impact and its significance."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Top Tech Analyst Warns: OpenAI\u2019s Ad Business Grew 10x in 6 Months. Google Search Is the Most Exposed",
+    "url": "https://finnhub.io/api/news?id=003c50f8a6d78ff34e00dafd525ce3b893d4bef6c4dfd0299cae9002d12f5aa0",
+    "classification": "Uncertain",
+    "confidence": 0.6,
+    "priority": "watch",
+    "escalation_reason": "The verdict is 'Uncertain' but confidence is 0.6, which is borderline. The reasoning for MSFT is vague and doesn't clearly explain why it's uncertain despite the partnership with OpenAI. The news directly impacts GOOGL by highlighting a competitor, but the impact on MSFT is presented as unclear without further justification. The connection to NVDA is not explained at all, despite NVDA being the primary ticker in the context."
   }
 ]
