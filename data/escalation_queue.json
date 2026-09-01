@@ -1231,5 +1231,104 @@
     "confidence": 0.3,
     "priority": "watch",
     "escalation_reason": "The provided news is extremely generic market commentary ('top movers within the dow jones index') and does not contain any specific information about NVDA or its competitors. The reasoning attempts to link MSFT to NVDA, but this connection is tenuous and doesn't justify the \"Uncertain\" classification given the lack of actual news. The low confidence (0.3) combined with \"watch\" priority warrants escalation."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "Stay informed about the most active stocks in the S&P500 index on Monday's session.",
+    "url": "https://finnhub.io/api/news?id=3acb000fbcd04c48667d73cb6408b0aeb637920de5672722498fff8d7028614e",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The reasoning is vague and does not explain why the specific ticker (AMD) is being classified as 'Uncertain'. It generically states that the news does not provide specific details for AMD, which is true for all stocks not explicitly mentioned. The low confidence score (0.3) combined with a 'watch' priority indicates a need for escalation."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "Stay informed about the most active stocks in the S&P500 index on Monday's session.",
+    "url": "https://finnhub.io/api/news?id=3acb000fbcd04c48667d73cb6408b0aeb637920de5672722498fff8d7028614e",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The reasoning states the news is 'general' and 'no specific information is provided about TSM', yet it still assigns a classification and priority. The confidence is low (0.3) and the priority is 'watch', indicating that this low-confidence, potentially impactful alert needs further review to confirm if the connection to TSM as a supplier to NVDA is sufficient justification for an alert, or if the news is too broad to be relevant to TSM."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "Stay informed about the most active stocks in the S&P500 index on Monday's session.",
+    "url": "https://finnhub.io/api/news?id=3acb000fbcd04c48667d73cb6408b0aeb637920de5672722498fff8d7028614e",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The news is a general market summary and does not provide specific information about MSFT. The classification is 'Uncertain' with low confidence (0.3) and a 'watch' priority, which warrants escalation due to the lack of specific news driving potential price movement."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "These stocks are the most active in today's session",
+    "url": "https://finnhub.io/api/news?id=887b5967af6ac9f8ec388fcc84618334a77f30a01e6d2da215bb8e0468423b8a",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The original verdict is 'Uncertain' with low confidence (0.4) but a 'watch' priority. The reasoning is vague and doesn't connect the 'most active stocks' headline to specific implications for AMD. The headline itself is generic and doesn't provide actionable information for a specific ticker like AMD. The reasoning attempts to create a connection based on AMD being a competitor/supplier to NVDA (which is mentioned in indirect context but not directly in the news), but this link is weak and speculative given the generic nature of the headline. The price/volume context (up price trend, normal volume) is not leveraged in the reasoning. Given the low confidence and the generic nature of the news, a deeper look is needed to understand if there's any underlying specific news driving AMD's activity or if it's just part of a broader market trend not captured by the headline."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "These stocks are the most active in today's session",
+    "url": "https://finnhub.io/api/news?id=887b5967af6ac9f8ec388fcc84618334a77f30a01e6d2da215bb8e0468423b8a",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The reasoning is too generic and doesn't specifically connect the 'most active stocks' headline to TSM. The confidence is low (0.4) and the priority is 'watch', which warrants escalation as per the guidelines. The news is about general market activity and doesn't mention TSM or its role as a manufacturer for NVDA."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "These stocks are the most active in today's session",
+    "url": "https://finnhub.io/api/news?id=887b5967af6ac9f8ec388fcc84618334a77f30a01e6d2da215bb8e0468423b8a",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The headline and summary are generic and do not provide specific information about any particular stock's activity. The verdict for NVDA is \"Uncertain\" with low confidence (0.3) and \"watch\" priority, but the reasoning does not explain why NVDA specifically is uncertain or what is driving the activity. It broadly mentions Microsoft's role in AI hardware, which is only indirectly related to NVDA and not directly supported by the headline. The price/volume context indicates 'up' price trend and 'normal' volume, which is not explicitly addressed in the reasoning for an 'Uncertain' classification with low confidence."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "These stocks are the most active in today's session",
+    "url": "https://finnhub.io/api/news?id=887b5967af6ac9f8ec388fcc84618334a77f30a01e6d2da215bb8e0468423b8a",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The news headline is a generic statement about active stocks with no specific details about NVDA or its related tickers. The reasoning for GOOGL, despite being listed as an indirect ticker, focuses on competition with NVDA in AI hardware and as a cloud provider, but doesn't explain why this news would be \"Uncertain\" for GOOGL. Furthermore, the confidence is low (0.3) while the priority is \"watch\", which warrants escalation."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "These stocks are the most active in today's session",
+    "url": "https://finnhub.io/api/news?id=887b5967af6ac9f8ec388fcc84618334a77f30a01e6d2da215bb8e0468423b8a",
+    "classification": "Uncertain",
+    "confidence": 0.2,
+    "priority": "watch",
+    "escalation_reason": "The verdict is 'Uncertain' with low confidence (0.2) for AAPL, yet the priority is 'watch'. The reasoning provided for AAPL's uncertainty is weak and doesn't clearly connect the news headline about 'most active stocks' to the company's specific situation, especially when contrasting it with NVDA's core business without a clear justification for why this specific news matters or doesn't matter to AAPL. The news itself is very generic ('most active stocks') and the classification seems to be forcing a connection to AAPL where none is strongly supported by the provided information."
+  },
+  {
+    "ticker": "AMD",
+    "headline": "These dow jones stocks are moving in today's session",
+    "url": "https://finnhub.io/api/news?id=018947a3b929c3e345a54fd0440d4a73a87dddf64afb6af9edfec10f1b78592f",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The provided news is a generic summary of Dow Jones movers, not specific to NVDA or any of its related tickers. The verdict claims uncertainty due to AMD being a competitor/supplier to NVDA, but the news itself doesn't mention AMD or NVDA at all. The reasoning is disconnected from the actual news content and seems to be fabricating a link based on ticker relationships rather than the news event. The confidence is low (0.3) and the priority is 'watch', which warrants escalation given the weak connection between the news and the supposed impact on AMD."
+  },
+  {
+    "ticker": "TSM",
+    "headline": "These dow jones stocks are moving in today's session",
+    "url": "https://finnhub.io/api/news?id=018947a3b929c3e345a54fd0440d4a73a87dddf64afb6af9edfec10f1b78592f",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The verdict claims uncertainty for TSM due to a vague headline about Dow Jones movers, but the headline explicitly states 'these dow jones stocks are moving in today's session' and the provided context for TSM is that it is a supplier to NVDA. The reasoning states TSM is a supplier to NVDA, but then incorrectly says the news provides no specific info relevant to TSM's business, when in fact, news about NVDA's performance (a major customer) could be directly relevant. The confidence is low (0.3) and the priority is 'watch', which is a key trigger for escalation. The headline is more than a general market overview; it suggests movement within the index, and TSM's relationship as a supplier to NVDA (a tech giant likely to be in such a headline) makes a truly uncertain classification questionable without further justification."
+  },
+  {
+    "ticker": "MSFT",
+    "headline": "These dow jones stocks are moving in today's session",
+    "url": "https://finnhub.io/api/news?id=018947a3b929c3e345a54fd0440d4a73a87dddf64afb6af9edfec10f1b78592f",
+    "classification": "Uncertain",
+    "confidence": 0.3,
+    "priority": "watch",
+    "escalation_reason": "The news is a generic market update about Dow Jones stocks and does not contain any specific information about NVDA, the only ticker mentioned in the direct context. The reasoning provided for MSFT is also speculative and not directly supported by the news content. The low confidence (0.3) combined with a 'watch' priority warrants escalation due to the lack of concrete information linking the news to the ticker's potential movement."
   }
 ]
