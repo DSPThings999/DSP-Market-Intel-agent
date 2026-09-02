@@ -1393,5 +1393,32 @@
     "confidence": 0.6,
     "priority": "watch",
     "escalation_reason": "The verdict is 'Uncertain' but confidence is 0.6, which is borderline. The reasoning for MSFT is vague and doesn't clearly explain why it's uncertain despite the partnership with OpenAI. The news directly impacts GOOGL by highlighting a competitor, but the impact on MSFT is presented as unclear without further justification. The connection to NVDA is not explained at all, despite NVDA being the primary ticker in the context."
+  },
+  {
+    "ticker": "GOOGL",
+    "headline": "Is Interactive Brokers Quietly Becoming an AI Stock?",
+    "url": "https://finnhub.io/api/news?id=57ab777cf928ecba932a89e777ff25a308041d0fc08dca1205fc4d907294233c",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "low",
+    "escalation_reason": "The verdict focuses on Google (GOOGL) which is not mentioned in the article. The article is about Interactive Brokers (IBKR) and its potential as an AI stock. The provided reasoning is irrelevant to the news and ticker context."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "Is Interactive Brokers Quietly Becoming an AI Stock?",
+    "url": "https://finnhub.io/api/news?id=57ab777cf928ecba932a89e777ff25a308041d0fc08dca1205fc4d907294233c",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "low",
+    "escalation_reason": "The verdict classifies the impact on AAPL as 'Uncertain' with low confidence (0.4) but the provided reasoning and risks/opportunities are generic and don't address why AAPL is included in the ticker context as a \"country peer\" to NVDA, nor do they directly engage with the article's premise about Interactive Brokers and AI as an investing interface. The connection to AAPL seems tenuous and unexplained in the context of the article's focus."
+  },
+  {
+    "ticker": "AAPL",
+    "headline": "AI Infrastructure Spending Is Set to Hit $1.4 Trillion by 2030. These Are the 3 Chip Stocks Positioned to Capture It.",
+    "url": "https://finnhub.io/api/news?id=9b3d215c7373a8fad3418a898b7c0749fb685b153f5b917d81899f327b5659d9",
+    "classification": "Uncertain",
+    "confidence": 0.4,
+    "priority": "watch",
+    "escalation_reason": "The classification is 'Uncertain' with a low confidence (0.4) and a 'watch' priority. The reasoning for AAPL's uncertainty is vague and doesn't sufficiently explain why AAPL would be included in the watchlist given the news focuses on companies directly involved in AI infrastructure spending (NVIDIA, AMD, TSM) and major AI consumers (MSFT, GOOGL). The connection to Apple seems tenuous and requires further justification."
   }
 ]
